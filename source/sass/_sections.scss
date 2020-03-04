@@ -52,7 +52,7 @@ section code {
 }
 section a {
   // Colors
-  color: $g-red;
+  color: $g-primary;
 }
 section svg {
   // Dimensions
@@ -79,11 +79,11 @@ section .mini-buttons {
 }
 section .button {
   // Borders
-  border: 1px solid $m-red;
+  border: 1px solid $m-primary;
   @include border-radius(5px);
 
   // Colors
-  color: $g-red;
+  color: $g-primary;
 
   // Spacing
   margin-right: 0.5rem;
@@ -95,5 +95,5 @@ section .button {
 section .button:hover,
 section .button:active {
   // Colors
-  background-color: $s-red;
+  background-color: $s-primary;
 }

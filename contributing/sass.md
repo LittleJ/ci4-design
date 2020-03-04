@@ -81,6 +81,8 @@ Light: `#FFFFFF` / `rgb(255, 255, 255)`
 
 **Glossy colors**
 
+Primary: `#DD4814` / `rgb(221, 72, 20)`
+
 Blue: `#5BC0DE` / `rgb(91, 192, 222)`
 
 Gray: `#434343` / `rgb(67, 67, 67)`
@@ -89,10 +91,11 @@ Green: `#9ACE25` / `rgb(154, 206, 37)`
 
 Orange: `#DD8615` / `rgb(221, 134, 21)`
 
-Red: `#DD4814` / `rgb(221, 72, 20)`
 
 
 **Matt colors**
+
+Primary: `#EF9090` / `rgb(239, 144, 144)`
 
 Blue: `#D8EAF0` / `rgb(216, 234, 240)`
 
@@ -102,10 +105,10 @@ Green: `#DFF0D8` / `rgb(223, 240, 216)`
 
 Orange: `#FDC894` / `rgb(253, 200, 148)`
 
-Red: `#EF9090` / `rgb(239, 144, 144)`
-
 
 **Subtle colors**
+
+Primary: `#F9F3F3` / `rgb(249, 243, 243)`
 
 Blue: `#E8EFF1` / `rgb(232, 239, 241)`
 
@@ -114,5 +117,3 @@ Gray: `#FAFAFA` / `rgb(250, 250, 250)`
 Green: `#EFF5ED` / `rgb(239, 245, 237)`
 
 Orange: `#F9F2EB` / `rgb(249, 242, 235)`
-
-Red: `#F9F3F3` / `rgb(249, 243, 243)`

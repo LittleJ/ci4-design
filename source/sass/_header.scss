@@ -69,8 +69,8 @@ header li.menu-item a {
 header li.menu-item a:hover,
 header li.menu-item a:focus {
   // Colors
-  background-color: $s-red;
-  color: $g-red;
+  background-color: $s-primary;
+  color: $g-primary;
 }
 header .logo {
   // Dimensions
@@ -101,7 +101,7 @@ header .menu-toggle button:focus {
   @include border-radius(5px);
 
   // Colors
-  background-color: $g-red;
+  background-color: $g-primary;
   color: $t-light;
 
   // Dimensions
@@ -176,7 +176,7 @@ header .heroe h2 {
   header li.menu-item a:hover,
   header li.menu-item a:focus {
     // Colors
-    background-color: $s-red;
-    color: $g-red;
+    background-color: $s-primary;
+    color: $g-primary;
   }
 }
