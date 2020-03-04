@@ -48,7 +48,7 @@ On the website:
 - Heroe section
 - Text content sections
 - Footer (but links are missing)
-- UI elements: links, buttons and "<pre>" code
+- UI elements: links, buttons and "pre" code
 
 ### Still to do
 
@@ -61,3 +61,4 @@ On the website:
 - The pages' content accordingly, which could include: new types of buttons (eg: "Download now" ? In the menu too ?), some sort of banner (for announcements ?), images... everything that you think is useful to present CI4 in the best way
 - The footer's content, the original one (from the "Welcome" page) is displaying debug info, we need something else for the website (probably based on the work done on Trello)
 - All automated tasked, from SASS compilation to the copy in the "dist" folder. And then, make copies on the the other repositories
+- Etc...
