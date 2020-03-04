@@ -16,7 +16,7 @@ A single SASS source to update:
 The "codeigniter4/design" repository is a bridge between "codeigniter4/framework" and "codeigniter4/website".
 
 Folders description:
-- "contributing": Will contain Sphinx documentation
+- "contributing": Will contain Markdown documentation
 - "dist": Will contain the final files which will be copied to the other repositories
 - "source": Will contain all the SCSS, HTML, JPG... files required in the diffrent repositories
 
