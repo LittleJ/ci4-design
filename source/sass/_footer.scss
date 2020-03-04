@@ -1,0 +1,29 @@
+// FOOTER
+// ========================================================================== */
+
+footer {
+  // Borders
+  border-top: 1px solid darken($s-gray,2.5%);
+
+  // Colors
+  background-color: $g-red;
+  color: $t-light;
+
+  // Position
+  text-align: center;
+}
+footer .environment {
+  // Spacing
+  padding: 2rem 1.75rem;
+}
+footer .copyrights {
+  // Colors
+  background-color: $g-gray;
+  color: $m-gray;
+
+  // Spacing
+  padding: 0.25rem 1.75rem;
+
+  // Typography
+  font-size: 80%;
+}

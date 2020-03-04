@@ -1,0 +1,99 @@
+// SECTIONS
+// ========================================================================== */
+
+section .content {
+  // Dimensions
+  max-width: 1100px;
+
+  // Spacing
+  margin: 0 auto;
+  padding: 2.5rem 1.75rem 3.5rem 1.75rem;
+}
+section h1 {
+  // Spacing
+  margin-bottom: 2.5rem;
+}
+section h2 {
+  // Spacing
+  margin: 2.5rem 0 3rem 0;
+
+  // Typography
+  font-size: 150%;
+}
+section h3 {
+  // Spacing
+  margin: 3rem 0 1.5rem 0;
+
+  // Typography
+  font-size: 125%;
+}
+section pre {
+  // Borders
+  border: 1px solid darken($s-gray,2.5%);
+
+  // Colors
+  background-color: $s-gray;
+
+  // Display
+  display: block;
+
+  // Spacing
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+
+  // Typography
+  font-size: .9rem;
+}
+section code {
+  // Display
+  display: block;
+}
+section a {
+  // Colors
+  color: $g-red;
+}
+section svg {
+  // Dimensions
+  width: 25px;
+
+  // Spacing
+  margin-bottom: -5px;
+  margin-right: 5px;
+}
+section:nth-of-type(even) {
+  // Borders
+  border-bottom: 1px solid darken($s-gray,2.5%);
+  border-top: 1px solid darken($s-gray,2.5%);
+
+  // Colors
+  background-color: $s-gray;
+}
+section .mini-buttons {
+  // Spacing
+  margin: 2rem 0 3rem 0;
+
+  // Typography
+  font-size: 85%;
+}
+section .button {
+  // Borders
+  border: 1px solid $m-red;
+  @include border-radius(5px);
+
+  // Colors
+  color: $g-red;
+
+  // Spacing
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.6rem;
+
+  // Typography
+  text-decoration: none;
+}
+section .button:hover,
+section .button:active {
+  // Colors
+  background-color: $s-red;
+}
