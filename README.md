@@ -22,6 +22,8 @@ Folders description:
 
 This is a proposal. People can suggest a different structure to the group.
 
+All the SASS files have some sort of "namespaces". Meaning, I never used "a{...}", instead I use "#debug-bar a{...}", "header a{...}"... This way, we can decide if we want only one global CSS to be generated.
+
 
 ## Generate the CSS
 
