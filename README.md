@@ -27,11 +27,7 @@ All the SASS files have some sort of "namespaces". Meaning, I never used "a{...}
 
 ## Generate the CSS
 
-``sass --no-cache --sourcemap=none source/sass/toolbar.scss dist/css/toolbar.css``
-
-``sass --no-cache --sourcemap=none source/sass/website.scss dist/css/website.css``
-
-``sass --no-cache --sourcemap=none source/sass/welcome.scss dist/css/welcome.css``
+See file "contributing/sass.md".
 
 
 ## Temporary to-do list

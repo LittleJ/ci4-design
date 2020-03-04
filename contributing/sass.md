@@ -1,57 +1,55 @@
-================
-Contribution CSS
-================
+# Contributing
 
-CodeIgniter uses SASS to generate the debug toolbar and the "Welcome" page CSS.
-Therefore, you will need to install it first. You can find further instructions
-on the official website: https://sass-lang.com/install
+CodeIgniter uses SASS. Therefore, you will need to install it first.
+You can find further instructions on the official website: https://sass-lang.com/install
 
 **The colors used must comply with the graphic charter.**
 
 
 
-Debug toolbar
-=============
+## Debug toolbar
 
-Open your terminal, and navigate to CodeIgniter's root folder. To generate
+Open your terminal, and navigate to the repo's root folder. To generate
 the CSS file, use the following command:
-``sass --no-cache --sourcemap=none admin/sass/debug-toolbar/toolbar.scss system/Debug/Toolbar/Views/toolbar.css``
+``sass --no-cache --sourcemap=none source/sass/toolbar.scss dist/css/toolbar.css``
 
 Details:
 - ``--no-cache`` is a parameter defined to disable SASS cache, this prevents a "cache" folder from being created
 - ``--sourcemap=none`` is a parameter which prevents soucemap files from being generated
-- ``admin/sass/debug-toolbar/toolbar.scss`` is the SASS source
-- ``system/Debug/Toolbar/Views/toolbar.css`` is he CSS destination
+- ``source/sass/toolbar.scss`` is the SASS source
+- ``dist/css/toolbar.css`` is he CSS destination
 
 
 
-Welcome page
-============
+## Website
 
-**Step 1**
-
-Open your terminal, and navigate to CodeIgniter's root folder. To generate
+Open your terminal, and navigate to the repo's root folder. To generate
 the CSS file, use the following command:
-``sass --no-cache --sourcemap=none admin/sass/welcome-page/welcome.scss admin/sass/welcome-page/welcome.css``
+``sass --no-cache --sourcemap=none source/sass/website.scss dist/css/website.css``
 
 Details:
 - ``--no-cache`` is a parameter defined to disable SASS cache, this prevents a "cache" folder from being created
 - ``--sourcemap=none`` is a parameter which prevents soucemap files from being generated
-- ``admin/sass/welcome-page/welcome.scss`` is the SASS source
-- ``admin/sass/welcome-page/welcome.css`` is he CSS destination
-
-**Step 2**
-
-The "Welcome" page shouldn't contain links to external resources, like
-CSS stylesheets. Therefore, you need to:
-- Copy the content of the file ``admin/sass/welcome-page/welcome.css``
-- Paste it in the file ``app/Views/welcome_message.php``
-- Delete the file ``admin/sass/welcome-page/welcome.css``
+- ``source/sass/website.scss`` is the SASS source
+- ``dist/css/website.css`` is he CSS destination
 
 
 
-Documentation
-=============
+## "Welcome" page
+
+Open your terminal, and navigate to the repo's root folder. To generate
+the CSS file, use the following command:
+``sass --no-cache --sourcemap=none source/sass/welcome.scss dist/css/welcome.css``
+
+Details:
+- ``--no-cache`` is a parameter defined to disable SASS cache, this prevents a "cache" folder from being created
+- ``--sourcemap=none`` is a parameter which prevents soucemap files from being generated
+- ``source/sass/welcome.scss`` is the SASS source
+- ``dist/css/welcome.css`` is he CSS destination
+
+
+
+## Documentation
 
 The documentation is generated using Sphinx and the RTD theme.
 
@@ -68,12 +66,11 @@ The documentation is generated using Sphinx and the RTD theme.
 
 You may want to check if:
 - The configuration file ``theme.conf`` has not changed in the latest release of the RTD theme
-- The file path to the original CSS (from the RTD theme) is valid in ``citheme.css` (@import)
+- The file path to the original CSS (from the RTD theme) is valid in ``citheme.css`` (@import)
 
 
 
-Graphic charter
-===============
+## Graphic charter
 
 **Themes**
 
