@@ -1,10 +1,9 @@
-**Keep in mind that it is a new concept. It is the begining. It will require optimizations.**
-**I did 95% of the work on the "framework" side, most of the work remaining is on the "website" side.**
-
 # ci4-design
 
 
+
 ## Concept
+
 
 A single SASS source to update:
 
@@ -16,45 +15,119 @@ A single SASS source to update:
 The "codeigniter4/design" repository is a bridge between "codeigniter4/framework" and "codeigniter4/website".
 
 Folders description:
-- "contributing": Will contain Markdown documentation
-- "dist": Will contain the final files which will be copied to the other repositories
-- "source": Will contain all the SCSS, HTML, JPG... files required in the diffrent repositories
+- "dist": Contains the final files which will be copied to the other repositories
+- "source": Contains all the SCSS, HTML, JPG... files required in the diffrent repositories
 
-This is a proposal. People can suggest a different structure to the group.
-
-All the SASS files have some sort of "namespaces". Meaning, I never used "a{...}", instead I used "#debug-bar a{...}", "header a{...}"... This way, we can decide if we want only one global CSS to be generated.
+All styles have some sort of "namespaces". Meaning, we don't use "a{...}", instead we use "#debug-bar a{...}", "header a{...}"... This way, we can include various partials without worrying about conflicts.
 
 
-## Generate the CSS
 
-See file "contributing/sass.md".
+## Contribute
 
 
-## Temporary to-do list
+CodeIgniter uses SASS. Therefore, you will need to install it first.
+You can find further instructions on the official website: https://sass-lang.com/install
 
-### Already done (but could be improved of course)
+Every pull request must:
+- Comply to the graphic charter
+- Be commented (with the correct style)
+- Have the same identation
 
-On the framework side:
-- Converted the debug toolbar to SASS (since v4.0)
-- Converted the "Welcome" page to SASS (PR pending)
 
-On the website:
-- Graphic charter and design according to the community
-- Responsive menu
-- Heroe section
-- Text content sections
-- Footer (but links are missing)
-- UI elements: links, buttons and "pre" code
 
-### Still to do
+## Compile SASS files
 
-On the framework side:
-- Convert the user guide CSS to SASS (already working on this, a first PR is pending, I know exactly what has still to be done)
 
-On the website:
-- The site map for the first release: probably max 5-6 pages, maybe static pages first. Advanced features like the tutorials and else will come after, through PRs.
-- Menu items accordingly
-- The pages' content accordingly, which could include: new types of buttons (eg: "Download now" ? In the menu too ?), some sort of banner (for announcements ?), images... everything that you think is useful to present CI4 in the best way
-- The footer's content, the original one (from the "Welcome" page) is displaying debug info, we need something else for the website (probably based on the work done on Trello)
-- All automated tasked, from SASS compilation to the copy in the "dist" folder. And then, make copies on the the other repositories
-- Etc...
+Open your terminal, and navigate to the repo's root folder. To generate
+the CSS file, use the following command:
+
+**For the toolbar**
+
+``sass --no-cache --sourcemap=none source/sass/toolbar.scss dist/css/toolbar.css``
+
+**For the website**
+
+``sass --no-cache --sourcemap=none source/sass/website.scss dist/css/website.css``
+
+**For the "Welcome" page**
+
+``sass --no-cache --sourcemap=none source/sass/welcome.scss dist/css/welcome.css``
+
+
+Details:
+- ``--no-cache`` is a parameter defined to disable SASS cache, this prevents a "cache" folder from being created
+- ``--sourcemap=none`` is a parameter which prevents soucemap files from being generated
+- ``source/sass/*.scss`` is the SASS source
+- ``dist/css/*.css`` is he CSS destination
+
+
+
+## Update the RTD theme
+
+
+**For now, the styles are not integrated to this repository.**
+
+The documentation is generated using Sphinx and the RTD theme.
+
+1/ Backup CI's custom files:
+- ``user_guide_src/source/_themes/sphinx_rtd_theme/theme.conf``
+- ``user_guide_src/source/_themes/sphinx_rtd_theme/static/css/citheme.css``
+- ``user_guide_src/source/_themes/sphinx_rtd_theme/static/js/citheme.js``
+- ``user_guide_src/source/_themes/sphinx_rtd_theme/static/img/ci-background.png``
+2/ Download the latest version of the RTD theme: https://github.com/readthedocs/sphinx_rtd_theme
+3/ Place the latest version in the folder ``user_guide_src/source/_themes/sphinx_rtd_theme/``
+3/ Restore CI's custom files
+
+You may want to check if:
+- The configuration file ``theme.conf`` has not changed in the latest release of the RTD theme
+- The file path to the original CSS (from the RTD theme) is valid in ``citheme.css`` (@import)
+
+
+
+## Graphic charter
+
+
+**Themes**
+
+Dark: `#252525` / `rgb(37, 37, 37)`
+
+Light: `#FFFFFF` / `rgb(255, 255, 255)`
+
+
+**Glossy colors**
+
+Primary: `#DD4814` / `rgb(221, 72, 20)`
+
+Blue: `#5BC0DE` / `rgb(91, 192, 222)`
+
+Gray: `#434343` / `rgb(67, 67, 67)`
+
+Green: `#9ACE25` / `rgb(154, 206, 37)`
+
+Orange: `#DD8615` / `rgb(221, 134, 21)`
+
+
+**Matt colors**
+
+Primary: `#EF9090` / `rgb(239, 144, 144)`
+
+Blue: `#D8EAF0` / `rgb(216, 234, 240)`
+
+Gray: `#DFDFDF` / `rgb(223, 223, 223)`
+
+Green: `#DFF0D8` / `rgb(223, 240, 216)`
+
+Orange: `#FDC894` / `rgb(253, 200, 148)`
+
+
+**Subtle colors**
+
+Primary: `#F9F3F3` / `rgb(249, 243, 243)`
+
+Blue: `#E8EFF1` / `rgb(232, 239, 241)`
+
+Gray: `#FAFAFA` / `rgb(250, 250, 250)`
+
+Green: `#EFF5ED` / `rgb(239, 245, 237)`
+
+Orange: `#F9F2EB` / `rgb(249, 242, 235)`
