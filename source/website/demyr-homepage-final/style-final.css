@@ -126,7 +126,7 @@ footer#footer-outer {float:left;width:100%;height:90px;background-color: #DD4814
 				.footer-menu-item a:hover {margin-top: -2px;border-bottom:1px solid #f4c3bd;  }
   
 		#footer-inner-right {float: right;margin-top: 0;width: 30%;height: 60px;}
-			#footer-inner-right .links-icons{float:left;position:relative;margin-top:-15px; width:60px; height:60px;border:0px solid #ddd;transition: all 2s ease;}
+			#footer-inner-right .links-icons{float:left;position:relative;margin-top:-20px; width:60px; height:60px;border:0px solid #ddd;transition: all 2s ease;}
 				#footer-inner-right .links-icons .icon{margin-bottom:0;margin:20px auto;transition: all 1s ease;}
 				#footer-inner-right .links-icons .data{font-size:11px;color:#111;line-height:10px;display:none;transition: all 2s ease;}
 				
