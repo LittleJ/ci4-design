@@ -12,7 +12,8 @@
 /*=============  MEDIA 1700px   =============*/
 @media(max-width:1700px) {
 
-    		
+   #important-links-inner {width:80%;height:100%;margin:10px auto;}   		
+	  		
 		
 }
 
