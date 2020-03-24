@@ -1,622 +1,451 @@
-/* CodeIgniter 4 - Website
- ============================================================================ */
-/* Forum: 	https://forum.codeigniter.com
- * Github:	https://github.com/codeigniter4/codeigniter4
- * Slack: 	https://codeigniterchat.slack.com
- * Website: https://codeigniter.com
- */
-* {
-  transition: background-color 300ms ease, color 300ms ease; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?></title>
+  <meta name="description" content="The small framework with powerful features">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
 
-*:focus {
-  background-color: #F9F3F3;
-  outline: none; }
+  <link rel="stylesheet" href="style-final.css">
+  <link rel="stylesheet" href="responsive.css?ver=1.0">
+  <link rel="stylesheet" href="animate.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap&subset=latin-ext" rel="stylesheet"> 
+</head>
+<body>
 
-.clr {
-  clear: both; }
+<!-- HEADER: MENU + HEROE SECTION -->
+<header>
+	<div id="header-inner">
+		<div id="logo">
+			<a href="https://codeigniter.com" target="_blank" title="CodeIgniter.com">
+			  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 500" width="185" height="44">
+				<style>
+				  tspan { white-space:pre }
+				  .shp0 { fill: #dd4814 }
+				</style>
+				<path class="shp0" d="M148.2 411C127.67 401.93 113.72 382.39 111.89 360.01C113.09 336.99 125.25 315.95 144.56 303.4C141.39 311.13 142.16 319.93 146.56 327C151.57 334 160.19 337.36 168.63 335.61C180.65 332.23 187.69 319.75 184.31 307.72C183.11 303.51 180.71 299.69 177.43 296.81C163.83 285.75 157 268.37 159.43 251C161.76 241.8 166.85 233.48 174.04 227.2C168.64 241.6 183.87 255.81 194.09 262.8C212.23 273.68 229.69 285.64 246.41 298.61C264.68 313.01 274.64 335.55 273.08 358.61C268.97 383.15 251.61 403.41 227.95 411.01C275.28 400.48 324.08 362.88 325.01 309.55C324.08 266.88 298.61 228.59 259.68 211.15L257.95 211.15C258.81 213.24 259.23 215.49 259.15 217.76C259.28 216.29 259.28 214.83 259.15 213.36C259.36 215.09 259.36 216.83 259.15 218.56C256.19 230.69 243.95 238.16 231.79 235.2C226.93 234 222.59 231.27 219.47 227.33C203.87 207.33 219.47 184.57 222.08 162.57C223.68 134.44 210.83 107.55 188.03 91.11C199.44 110.13 184.24 135.11 173.19 149.32C162.12 163.53 146.12 174.12 133.08 186.52C119.03 199.59 106.15 213.96 94.59 229.32C69.6 259.85 59.79 300.12 67.92 338.72C79.07 375.92 109.99 403.87 148.12 411.12L148.33 411.12L148.2 411Z" />
+				<path fill="#dd4814" d="M472.76 251.2Q472.76 233.28 478.92 215.64Q485.36 197.72 497.4 183.72Q509.44 169.72 527.08 161.04Q544.72 152.08 567.12 152.08Q593.72 152.08 612.48 164.12Q631.52 176.16 640.48 195.48L625.08 205Q620.32 195.2 613.32 188.48Q606.6 181.76 598.76 177.56Q590.92 173.36 582.52 171.68Q574.12 169.72 566 169.72Q548.08 169.72 534.36 177Q520.64 184.28 511.12 196.04Q501.88 207.8 497.12 222.64Q492.36 237.2 492.36 252.32Q492.36 268.84 497.96 283.96Q503.84 299.08 513.64 310.84Q523.72 322.32 537.16 329.32Q550.88 336.04 566.84 336.04Q575.24 336.04 583.92 334.08Q592.88 331.84 601 327.36Q609.4 322.6 616.4 315.88Q623.4 308.88 628.16 299.08L644.4 307.48Q639.64 318.68 630.96 327.36Q622.28 335.76 611.64 341.64Q601 347.52 588.96 350.6Q577.2 353.68 565.72 353.68Q545.28 353.68 528.2 344.72Q511.12 335.76 498.8 321.48Q486.48 306.92 479.48 288.72Q472.76 270.24 472.76 251.2ZM736.24 354.8Q720.28 354.8 707.12 348.92Q693.96 342.76 684.16 332.4Q674.64 322.04 669.32 308.32Q664 294.6 664 279.48Q664 264.08 669.32 250.36Q674.92 236.64 684.44 226.28Q694.24 215.92 707.4 209.76Q720.56 203.6 736.24 203.6Q751.92 203.6 765.08 209.76Q778.52 215.92 788.04 226.28Q797.84 236.64 803.16 250.36Q808.76 264.08 808.76 279.48Q808.76 294.6 803.44 308.32Q798.12 322.04 788.32 332.4Q778.8 342.76 765.36 348.92Q752.2 354.8 736.24 354.8ZM683.32 279.76Q683.32 292.08 687.52 302.72Q691.72 313.08 698.72 321.2Q706 329.04 715.52 333.52Q725.32 338 736.24 338Q747.16 338 756.68 333.52Q766.48 328.76 773.76 320.92Q781.04 312.8 785.24 302.16Q789.44 291.52 789.44 279.2Q789.44 267.16 785.24 256.52Q781.04 245.6 773.76 237.76Q766.48 229.64 756.68 225.16Q747.16 220.4 736.24 220.4Q725.32 220.4 715.8 225.16Q706.28 229.64 699 237.76Q691.72 245.88 687.52 256.8Q683.32 267.44 683.32 279.76ZM900.6 354.8Q885.48 354.8 872.6 348.64Q859.72 342.2 850.48 331.84Q841.24 321.48 835.92 308.04Q830.88 294.32 830.88 279.48Q830.88 264.08 835.92 250.36Q840.96 236.36 849.64 226Q858.6 215.64 870.64 209.76Q882.96 203.6 897.52 203.6Q916 203.6 930.28 213.4Q944.56 222.92 952.68 236.64L952.68 147.6L971.72 147.6L971.72 327.36Q971.72 335.2 978.44 335.2L978.44 352Q974.24 352.84 971.72 352.84Q965 352.84 959.96 348.64Q954.92 344.16 954.92 338L954.92 323.72Q946.24 338 931.4 346.4Q916.56 354.8 900.6 354.8ZM904.8 338Q911.8 338 919.64 335.2Q927.76 332.4 934.76 327.64Q941.76 322.6 946.52 316.16Q951.56 309.44 952.68 301.88L952.68 256.8Q949.88 249.24 944.56 242.8Q939.24 236.08 932.24 231.04Q925.52 226 917.68 223.2Q909.84 220.4 902.28 220.4Q890.52 220.4 881 225.44Q871.48 230.48 864.48 238.88Q857.76 247 854.12 257.64Q850.48 268.28 850.48 279.48Q850.48 291.24 854.68 301.88Q858.88 312.52 866.16 320.64Q873.44 328.48 883.24 333.24Q893.32 338 904.8 338ZM1077.84 354.8Q1061.88 354.8 1048.44 348.92Q1035.28 342.76 1025.48 332.4Q1015.68 321.76 1010.08 308.04Q1004.76 294.32 1004.76 278.64Q1004.76 263.24 1010.08 249.8Q1015.68 236.08 1025.2 226Q1035 215.64 1048.44 209.76Q1061.88 203.6 1077.56 203.6Q1093.52 203.6 1106.68 209.76Q1120.12 215.64 1129.64 226Q1139.16 236.36 1144.48 249.8Q1149.8 263.24 1149.8 278.36Q1149.8 280.6 1149.8 282.84Q1149.8 285.08 1149.52 285.92L1024.64 285.92Q1025.48 297.68 1029.96 307.76Q1034.72 317.56 1042 324.84Q1049.28 332.12 1058.52 336.32Q1068.04 340.24 1078.68 340.24Q1085.68 340.24 1092.68 338.28Q1099.68 336.32 1105.56 332.96Q1111.44 329.6 1116.2 324.84Q1120.96 319.8 1123.48 313.92L1140 318.4Q1136.64 326.52 1130.48 333.24Q1124.32 339.68 1116.2 344.72Q1108.08 349.48 1098.28 352.28Q1088.48 354.8 1077.84 354.8ZM1024.36 271.36L1131.6 271.36Q1130.76 259.6 1126 250.08Q1121.52 240.28 1114.24 233.28Q1107.24 226.28 1097.72 222.36Q1088.48 218.44 1077.84 218.44Q1067.2 218.44 1057.68 222.36Q1048.16 226.28 1040.88 233.28Q1033.88 240.28 1029.4 250.08Q1025.2 259.88 1024.36 271.36ZM1217.56 352L1178.92 352L1178.92 153.2L1217.56 153.2L1217.56 352ZM1311.08 352.84Q1296.24 352.84 1284.2 346.96Q1272.16 341.08 1263.2 331Q1254.52 320.64 1249.76 307.2Q1245 293.76 1245 278.64Q1245 262.68 1250.04 248.96Q1255.08 235.24 1264.04 224.88Q1273 214.52 1285.6 208.64Q1298.2 202.76 1313.32 202.76Q1330.4 202.76 1343.28 210.6Q1356.16 218.16 1364.56 231.04L1364.56 205.28L1397.32 205.28L1397.32 345Q1397.32 361.24 1391.16 374.12Q1385 387 1374.08 395.96Q1363.44 404.92 1348.32 409.68Q1333.48 414.44 1315.84 414.44Q1291.76 414.44 1275.24 406.6Q1259 398.48 1247.24 383.92L1267.68 364.04Q1276.08 374.4 1288.68 380.28Q1301.56 386.16 1315.84 386.16Q1324.52 386.16 1332.36 383.92Q1340.48 381.4 1346.64 376.36Q1352.8 371.32 1356.16 363.48Q1359.8 355.64 1359.8 345L1359.8 326.52Q1352.52 339.12 1339.36 346.12Q1326.2 352.84 1311.08 352.84ZM1323.68 322.88Q1329.84 322.88 1335.44 320.92Q1341.04 318.96 1345.8 315.6Q1350.56 312.24 1354.2 307.76Q1357.84 303.28 1359.8 298.24L1359.8 263.24Q1354.76 250.36 1343.84 242.52Q1333.2 234.68 1321.44 234.68Q1312.76 234.68 1305.76 238.6Q1298.76 242.24 1293.72 248.68Q1288.68 254.84 1285.88 262.96Q1283.36 271.08 1283.36 279.76Q1283.36 288.72 1286.44 296.56Q1289.52 304.4 1294.84 310.28Q1300.44 316.16 1307.72 319.52Q1315 322.88 1323.68 322.88ZM1567.56 260.44L1567.56 352L1530.04 352L1530.04 269.68Q1530.04 252.04 1523.88 243.92Q1517.72 235.8 1506.8 235.8Q1501.2 235.8 1495.32 238.04Q1489.44 240.28 1484.12 244.48Q1479.08 248.4 1474.88 254Q1470.68 259.6 1468.72 266.32L1468.72 352L1431.2 352L1431.2 205.28L1465.08 205.28L1465.08 232.44Q1473.2 218.44 1488.6 210.6Q1504 202.76 1523.32 202.76Q1537.04 202.76 1545.72 207.8Q1554.4 212.84 1559.16 220.96Q1563.92 229.08 1565.6 239.44Q1567.56 249.8 1567.56 260.44ZM1637.84 352L1600.32 352L1600.32 205.28L1637.84 205.28L1637.84 352ZM1637.84 184.84L1600.32 184.84L1600.32 147.6L1637.84 147.6L1637.84 184.84ZM1752.08 314.76L1759.64 344.44Q1752.08 347.8 1741.16 351.16Q1730.24 354.52 1718.2 354.52Q1710.36 354.52 1703.36 352.56Q1696.64 350.6 1691.32 346.4Q1686.28 341.92 1683.2 335.2Q1680.12 328.2 1680.12 318.4L1680.12 234.12L1660.8 234.12L1660.8 205.28L1680.12 205.28L1680.12 157.68L1717.64 157.68L1717.64 205.28L1748.44 205.28L1748.44 234.12L1717.64 234.12L1717.64 305.8Q1717.64 313.64 1721.56 317Q1725.76 320.08 1731.64 320.08Q1737.52 320.08 1743.12 318.12Q1748.72 316.16 1752.08 314.76ZM1843.64 354.8Q1826 354.8 1811.72 348.92Q1797.44 342.76 1787.36 332.4Q1777.28 322.04 1771.68 308.32Q1766.36 294.6 1766.36 279.48Q1766.36 263.8 1771.68 250.08Q1777 236.08 1787.08 225.72Q1797.16 215.08 1811.44 208.92Q1826 202.76 1843.92 202.76Q1861.84 202.76 1875.84 208.92Q1890.12 215.08 1899.92 225.44Q1910 235.8 1915.04 249.52Q1920.36 263.24 1920.36 278.08Q1920.36 281.72 1920.08 285.08Q1920.08 288.44 1919.52 290.68L1806.12 290.68Q1806.96 299.36 1810.32 306.08Q1813.68 312.8 1819 317.56Q1824.32 322.32 1831.04 324.84Q1837.76 327.36 1845.04 327.36Q1856.24 327.36 1866.04 322.04Q1876.12 316.44 1879.76 307.48L1911.96 316.44Q1903.84 333.24 1885.92 344.16Q1868.28 354.8 1843.64 354.8ZM1805.56 266.32L1881.72 266.32Q1880.32 249.8 1869.4 240Q1858.76 229.92 1843.36 229.92Q1835.8 229.92 1829.08 232.72Q1822.64 235.24 1817.6 240Q1812.56 244.76 1809.2 251.48Q1806.12 258.2 1805.56 266.32ZM2030.68 203.6L2030.68 237.76Q2013.6 238.04 2000.16 244.48Q1986.72 250.64 1980.84 263.24L1980.84 352L1943.32 352L1943.32 205.28L1977.76 205.28L1977.76 236.64Q1981.68 229.08 1987 223.2Q1992.32 217.04 1998.48 212.56Q2004.64 208.08 2010.8 205.84Q2017.24 203.32 2023.12 203.32Q2026.2 203.32 2027.6 203.32Q2029.28 203.32 2030.68 203.6Z" />
+			  </svg>
+			</a>
+		</div>
+			<div id="menu-toggle">
+				<button onclick="toggleMenu();">&#9776;</button>
+			</div>
+		<div id="top-menu">
+					<a href="discover.html" class="top-menu-item hidden" title="CodeIgniter.com">Discover</a>
+					<a href="learn.html" class="top-menu-item hidden" title="CodeIgniter.com">Learn</a>
+					<a href="https://codeigniter4.github.io/userguide/" class="top-menu-item hidden" target="_blank" title="User guide">Discuss</a>
+					<a href="https://forum.codeigniter.com/" class="top-menu-item hidden" target="_blank" title="Forum">Contribute</a>
+					<a href="#" class="top-menu-item-download" class="top-menu-item hidden" title="Github">Download</a>
+		</div><!--top-menu ende-->
+	</div><!--header inner ende-->
+		<!--<a href="#" class="download-button" class="top-menu-item hidden" title="Github">Download</a>-->
+</header>
 
-:root{
-	--primary-color:#DD4814; /*main orange color */
-	--primary-dark:#c9340a; /* used in footer */
-	--secondary-color:#111111; /* especially for titles */
-	--general-text:#252525; /* general text */
-	--white : #ffffff;
-	--soft-white : #fafafa; /* some backgrounds / background sripes*/
-	--section-border : #f4f4f4; /* top or bottom border for sections */
-}
-body {
-  color: var(--general-text)/*#252525*/;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 16px;
-  font-weight: 400; 
+<section id="spotlight-outer">
+	<div id="spotlight-inner">
+		<div id="spotlight-title" class="animated fadeInDown">CodeIgniter 
+			<div id="spotlight-version">4</div> 
+		</div><!--spotlight title ende-->
+		<div id="spotlight-note" class="animated fadeInDown">has just been released</div>
+
+				<div class="clr"></div>
+
+		<div id="spotlight-button-holder" class="animated fadeInDown">
+			<a href="" id="spotlight-link">take a look</a>
+		</div><!--spotlight-button-ends here-->
+	 
+		<div id="github-scores" class="animated fadeInDown"> 
+			<a href="https://github.com/codeigniter4/CodeIgniter4" class="github-link" target="_blank">
+				<div class="githubs">
+					<div class="github-icon">
+						<img src="iconlar/footer-github-stars.png" />
+						<div class="github-data">
+							<span class="boldy700">Star</span> 18,034
+						</div>
+					</div>
+				</div>
+			</a>
+		
+			<a href="https://github.com/codeigniter4/CodeIgniter4" class="github-link" target="_blank">
+				<div class="githubs">
+					<div class="github-icon">
+						<img src="iconlar/footer-github-fork.png" />
+						<div class="github-data">
+							<span class="boldy700">Fork</span> 7,836
+						</div>
+					</div>
+				</div>
+			</a>
+		</div><!--github scores ends-->
+	</div><!--spotlight-inner ende-->
+</section><!--spotlight-outer ende-->
+
+<div class="clr"></div>
+
+<section id="slogan-outer">
+	<div id="slogan-inner">
+  		<div id="slogan-title">The small framework with poweful features</div>
+  			     <div class="clr"></div>
+  			<div id="slogan-text">
+  				CodeIgniter is a powerful PHP framework with a very small footprint,
+  				built for developers who need a simple and elegant toolkit to create full-featured web applications.
+          <a href="#" class="slogan-link">Learn More</a>
+  			</div> <!--slogan-note ends here-->
+	 </div><!--slogan-inner ends here-->
+
+        <div class="clr"></div>
+</section>
+
+<section id="important-links-outer">
+	<div id="important-links-inner">
+		<a href="#" class="important-link">
+		  <div class="important-link-boxes">
+			<span class="boldy600 dark">Download Page</span>
+			   <br />
+			Find All The Releases
+			  <br /><br />
+			<img src="iconlar/download.png" />
+		  </div> <!--important-link-boxes ends here-->
+		</a>
+
+		<a href="#" class="important-link">
+		  <div class="important-link-boxes">
+			<span class="boldy600 dark">Clear Documentation</span>
+			   <br />
+			Read The Manual
+			  <br /><br />
+			<img src="iconlar/documentation.png" />
+		  </div> <!--important-link-boxes ends here-->
+		</a>
+
+		<a href="#" class="important-link">
+		  <div class="important-link-boxes">
+			<span class="boldy600 dark">Get Support & Discuss Things</span>
+			   <br />
+			View The Forums
+			  <br /><br />
+			<img src="iconlar/forum.png" />
+		  </div> <!--important-link-boxes ends here-->
+		</a>
+
+		<a href="#" class="important-link">
+		  <div class="important-link-boxes">
+			<span class="boldy600 dark">Fix Bugs or Add Features</span>
+			   <br />
+			On Github
+			  <br /><br />
+			<img src="iconlar/github.png" />
+		  </div> <!--important-link-boxes ends here-->
+		</a>
+        <div class="clr"></div>
+	</div><!--important-links-inner ende-->
+</section> <!--important-links-inner ende-->
+
+	<div class="clr"></div>
+
+<section id="content-outer">
+  <div id="content-inner">
+  
+      <div class="recent-news-and-forum-posts">
+          <div class="rnafp-name">Recent News</div>
+              <div class="clr"></div>
+
+            <div class="rnapf-row">
+              <div class="rnapf-date">
+                  2020.02.24
+              </div><!--rnapf-date ends here-->
+              <div class="rnapf-title">
+                  <a href="#" class="rnapf-title-link">CodeIgniter 4.0 is here! </a>
+              </div><!--rnapf-title ends here-->
+            </div><!--rnapf-row ends here-->
+
+            <div class="rnapf-row">
+              <div class="rnapf-date">
+                  2020.02.06
+              </div><!--rnapf-date ends here-->
+              <div class="rnapf-title">
+                  <a href="#" class="rnapf-title-link">CodeIgniter 4.0.0-rc.4  </a>
+              </div><!--rnapf-title ends here-->
+            </div><!--rnapf-row ends here-->
+
+            <div class="rnapf-row">
+              <div class="rnapf-date">
+                  2020.01.15
+              </div><!--rnapf-date ends here-->
+              <div class="rnapf-title">
+                  <a href="#" class="rnapf-title-link">Important News about Jim Parry and the Project </a>
+              </div><!--rnapf-title ends here-->
+            </div><!--rnapf-row ends here-->
+
+            <div class="rnapf-row">
+              <div class="rnapf-date">
+                  2019.11.25
+              </div><!--rnapf-date ends here-->
+              <div class="rnapf-title">
+                  <a href="#" class="rnapf-title-link">CodeIgniter 4 Playground </a>
+              </div><!--rnapf-title ends here-->
+            </div><!--rnapf-row ends here-->
+
+            <div class="rnapf-row">
+              <div class="rnapf-date">
+                  2019.10.19
+              </div><!--rnapf-date ends here-->
+              <div class="rnapf-title">
+                  <a href="#" class="rnapf-title-link">CodeIgniter 4.0.0-rc.3 released </a>
+              </div><!--rnapf-title ends here-->
+            </div><!--rnapf-row ends here-->
+      </div><!--recent-news-and-forum-posts here-->
+
+      <div class="recent-news-and-forum-posts margin-left">
+          <div class="rnafp-name">Active Forum Threads</div>
+              <div class="clr"></div>
+
+            <div class="rnapf-row">
+              <div class="rnapf-date">
+                2020.03.06
+              </div><!--rnapf-date ends here-->
+              <div class="rnapf-title">
+                  <a href="#" class="rnapf-title-link">Getting Internal Server Error when i use nginx config  </a>
+              </div><!--rnapf-title ends here-->
+            </div><!--rnapf-row ends here-->
+
+            <div class="rnapf-row">
+              <div class="rnapf-date">
+                  2020.03.06
+              </div><!--rnapf-date ends here-->
+              <div class="rnapf-title">
+                  <a href="#" class="rnapf-title-link">Template View Library  </a>
+              </div><!--rnapf-title ends here-->
+            </div><!--rnapf-row ends here-->
+
+            <div class="rnapf-row">
+              <div class="rnapf-date">
+                2020.03.06
+              </div><!--rnapf-date ends here-->
+              <div class="rnapf-title">
+                  <a href="#" class="rnapf-title-link">Views renderer merging template &amp; content  </a>
+              </div><!--rnapf-title ends here-->
+            </div><!--rnapf-row ends here-->
+
+            <div class="rnapf-row">
+              <div class="rnapf-date">
+                2020.03.06
+              </div><!--rnapf-date ends here-->
+              <div class="rnapf-title">
+                  <a href="#" class="rnapf-title-link">My replies got deleted </a>
+              </div><!--rnapf-title ends here-->
+            </div><!--rnapf-row ends here-->
+
+            <div class="rnapf-row">
+              <div class="rnapf-date">
+                2020.03.06
+              </div><!--rnapf-date ends here-->
+              <div class="rnapf-title">
+                  <a href="#" class="rnapf-title-link">Double select in builder </a>
+              </div><!--rnapf-title ends here-->
+            </div><!--rnapf-row ends here-->
+      </div><!--recent-news-and-forum-posts here-->
+  
+
+  <div class="clr"></div>
+
+      <div id="why-codeigniter-title" class="section-title">Why CodeIgniter ? </div>
+        <div class="clr"></div>
+
+		<div class="why-rows">
+			<div class="ci-features-box">
+				<div class="ci-features-box-icon">
+				  <img src="iconlar/star-02a.png" />
+				</div><!--ci-features-box-icon ends here-->
+				<div class="ci-features-box-text-area">
+				  <div class="ci-features-box-title">Framework with a small footprint</div>
+						<div class="clr"></div>
+					<div class="ci-features-box-text">
+					  CodeIgniter 4 is a 1.2MB download, plus 6MB for the user guide.
+					</div><!--ci-features-box-text ends here-->
+				</div><!--ci-features-box-text ends here-->
+			</div><!--ci-feature-box ends here-->
+
+			<div class="ci-features-box">
+				<div class="ci-features-box-icon">
+				  <img src="iconlar/speed-02a.png" />
+				</div><!--ci-features-box-icon ends here-->
+				<div class="ci-features-box-text-area">
+				  <div class="ci-features-box-title">Exceptional performance</div>
+						<div class="clr"></div>
+					<div class="ci-features-box-text">
+					  CodeIgniter consistently outperforms most of its competitors.
+					</div><!--ci-features-box-text ends here-->
+				</div><!--ci-features-box-text ends here-->
+			</div><!--ci-feature-box ends here-->
+		</div><!--why-rows ende-->
+		
+<div class="clr"></div>
+		
+		<div class="why-rows">
+			<div class="ci-features-box">
+				<div class="ci-features-box-icon">
+					<img src="iconlar/paper-plane-02b.png" />
+				</div><!--ci-features-box-icon ends here-->
+				<div class="ci-features-box-text-area">
+				  <div class="ci-features-box-title">Simple solutions over complexity</div>
+						<div class="clr"></div>
+					<div class="ci-features-box-text">
+					  CodeIgniter encourages MVC, but does not force it on you.
+					</div><!--ci-features-box-text ends here-->
+				</div><!--ci-features-box-text ends here-->
+			</div><!--ci-feature-box ends here-->
+
+			<div class="ci-features-box">
+				<div class="ci-features-box-icon">
+					<img src="iconlar/security-02a.png" />
+				</div><!--ci-features-box-icon ends here-->
+				<div class="ci-features-box-text-area">
+				  <div class="ci-features-box-title">Strong Security</div>
+						<div class="clr"></div>
+					<div class="ci-features-box-text">
+					  We take security seriously, with built-in protection against CSRF and XSS attacks.
+					  Version 4 adds context-sensitive escaping and CSP
+					</div><!--ci-features-box-text ends here-->
+				</div><!--ci-features-box-text ends here-->
+			</div><!--ci-feature-box ends here-->
+		</div><!--why-rows ende-->
+		
+<div class="clr"></div>
+
+		<div class="why-rows">
+			<div class="ci-features-box">
+				<div class="ci-features-box-icon">
+				  <img src="iconlar/book-02a.png" />
+				</div><!--ci-features-box-icon ends here-->
+				<div class="ci-features-box-text-area">
+				  <div class="ci-features-box-title">Clear documentation</div>
+						<div class="clr"></div>
+					<div class="ci-features-box-text">
+					  CodeIgniter consistently outperforms most of its competitors.
+					</div><!--ci-features-box-text ends here-->
+				</div><!--ci-features-box-text ends here-->
+			</div><!--ci-feature-box ends here-->
+
+			<div class="ci-features-box">
+				<div class="ci-features-box-icon">
+				  <img src="iconlar/configuration-02a.png" />
+				</div><!--ci-features-box-icon ends here-->
+				<div class="ci-features-box-text-area">
+				  <div class="ci-features-box-title">Nearly zero configuration</div>
+						<div class="clr"></div>
+					<div class="ci-features-box-text">
+					  Almost everything is set in CodeIgniter. Just connect your database!
+					</div><!--ci-features-box-text ends here-->
+				</div><!--ci-features-box-text ends here-->
+			</div><!--ci-feature-box ends here-->
+		</div><!--why rows ende-->
+		
+		<div class="clr"></div>
+  </div><!--features-inner ends here-->
+
+
+</section>
+<div class="clr"></div>
+
+
+<footer id="footer-outer">
+  <div id="footer-inner">
+    <div id="footer-inner-left">
+          <a href="https://codeigniter.com" class="footer-menu-item" title="CodeIgniter.com">Policies</a>
+          <a href="https://codeigniter.com" class="footer-menu-item" title="CodeIgniter.com">The Fine Print</a>
+          <a href="https://codeigniter.com" class="footer-menu-item" title="CodeIgniter.com">Discover</a>
+          <a href="https://codeigniter.com" class="footer-menu-item"title="CodeIgniter.com">Learn</a>
+          <a href="https://codeigniter4.github.io/userguide/" class="footer-menu-item" title="User guide">Discuss</a>
+          <a href="https://forum.codeigniter.com/" class="footer-menu-item" title="Forum">Contribute</a>
+          <a href="#" class="footer-menu-item" title="Github">Download</a>
+    </div><!--footer-inner-left ends here-->
+
+    <div id="footer-inner-right">
+		<a href="https://github.com/bcit-ci/CodeIgniter" target="_blank">
+			<div class="links-icons">
+				<div class="icon">
+					<img src="iconlar/footer-github-stars-red02.png" />
+						<br />
+					<span class="data">
+						Star 
+						18,034
+					</span>
+				</div>
+			</div>
+		</a>
+		
+		<a href="https://github.com/codeigniter4/CodeIgniter4" target="_blank">
+			<div class="links-icons">
+				<div class="icon">
+					<img src="iconlar/footer-github-fork-red02.png" />
+						<br />
+					<span class="data">
+						Fork 
+						7,836
+					</span>
+				</div>
+			</div>
+		</a>
+
+		<a href="https://codeigniterchat.slack.com/" target="_blank">
+			<div class="links-icons">
+				<div class="icon">
+					<img src="iconlar/footer-slack-red02.png" />
+						<br />
+					<span class="data">
+						Slack 
+						Chat
+					</span>
+				</div>
+			</div>
+		</a>
+    </div><!--footer-inner-right ends here-->
+  </div><!--footer-inner ends here-->
+
+
+</footer>
+<div class="clr"></div>
+
+  <div id="footer-copyrights">
+    <p>&copy; <?= date('Y') ?> CodeIgniter Foundation. CodeIgniter is open source project released under the MIT
+      open source licence.</p>
+
+	<img id="scroll-to-top" src="iconlar/ci-footer.png"/>
+	
+  </div>
+<!-- SCRIPTS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--
+<script>
+  function toggleMenu() {
+    var menuItems = document.getElementsByClassName('menu-item');
+    for (var i = 0; i < menuItems.length; i++) {
+      var menuItem = menuItems[i];
+      menuItem.classList.toggle("hidden");
+    }
   }
- 
-header {
-	border-bottom: 1px solid var(--section-border);
-	background-color: var(--soft-white);
-	padding: 0; 
-	margin:0;
-	height:60px;
-	}
-	
-#header-inner{
-	width:80%;
-	height:60px;
-	margin:0 auto;
-	}
-	
-#logo{
-	float:left;
-	margin-top:7.5px;
-	}
+</script>-->
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('#menu-toggle button').click(function(){
+				$("#top-menu").slideToggle("slow");
+			});
+	});
+</script>
 
-#menu-toggle {
-	display: none;
-	float: right;
-	font-size: 2rem;
-	font-weight: bold; 
-	}
-	
-#menu-toggle button, #menu-toggle button:hover, #menu-toggle button:focus {
-	border: none;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	background-color: var(--primary-color);
-	color: var(--white);
-	height: 36px;
-	width: 40px;
-	cursor: pointer;
-	overflow: visible;
-	margin: 11px 0;
-	padding: 0;
-	font-size: 1.3rem; 
-	}
-
-#top-menu {
-	float:right;
-	width:460px;
-	margin: 0;
-	padding: 0; 
-	box-sizing:border-box;
-	}
-
-a.top-menu-item:link,a.top-menu-item:visited {
-	float:left;
-	text-decoration:none;
-	color: var(--secondary-color);
-	font-weight: 300;
-	height:30px;
-	margin: 0;
-	padding: 20px 15px 0 15px;
-	text-align: center; 
-	border-bottom:1px solid var(--soft-white);
-	}
-	
-a.top-menu-item:hover,a.top-menu-item:focus {
-	color: var(--primary-color);
-	border-bottom:1px solid var(--primary-color); 
-	}
-
-/* top menu active one starts here */
-a.top-menu-item-active:link,a.top-menu-item-active:visited {
-	float:left;
-	text-decoration:none;
-	height: 30px;
-	line-height: 30px;
-	margin: 0px 0;
-	padding: .7rem .65rem;
-	text-align: center; 
-	color: var(--primary-color);
-	border-bottom:1px solid var(--primary-color);
-	}
-
-a.top-menu-item-active:hover,a.top-menu-item-active:focus {
-	border-bottom:1px solid var(--primary-color);
-	}
-
-/* top menu active one ended */
-
-/* top menu download button starts here */
-a.top-menu-item-download {
-	text-decoration:none;
-	float:right;
-	background-color: var(--primary-color);
-	color: var(--white);
-	margin:14px -4px 0 0;
-	padding: 6px 18px; 
-	border-radius:5px 0 0 5px;
-	}
-	
-a.top-menu-item-download:hover {
-	background-color: var(--primary-dark);
-	border-bottom:0px solid var(--primary-color);
-	}
-/*
-a.download-button{
-	text-decoration:none;
-	float:right;
-	background-color: var(--primary-color);
-	color: var(--white);
-	margin:-46px 0 0 0;
-	padding: 6px 18px; 
-	border-radius:5px 0 0 5px;
-	}
-
-a.download-button:hover {
-	background-color: var(--primary-dark);
-	border-bottom:0px solid var(--primary-color);
-	}	*/
-/* The spotlight stands for slider which we do not have */
-	
-section#spotlight-outer{
-	float:left;
-	width:100%;
-	height:100%;
-	margin:0;
-	padding:0;
-	background:var(--soft-white);
-	}
-	
-#spotlight-inner {
-	width: 80%;
-	height:100%;
-	margin: 0 auto;
-	padding: 1rem 1.75rem 2.75rem 1.75rem; 
-	}
-
-#spotlight-title {
-	position: relative;
-	width: 600px;
-	height: 150px;
-	margin: 16px auto;
-	font-size: 6rem;
-	color: var(--primary-color);
-	text-align: center; 
-	}
-
-#spotlight-version {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	top: 20px;
-	right: 0;
-	font-size: 2rem;
-	color: var(--primary-color);
-	text-align: center; 
-	}
-
-#spotlight-note {
-	float: left;
-	width: 100%;
-	margin-top: -28px;
-	text-align: center;
-	font-size: 2rem; 
-	}
-			
-#spotlight-button-holder {
-	width: 210px;
-	height: 30px;
-	margin: 35px auto;
-	margin-bottom: 10px; 
-	}
-
-#spotlight-link {
-	text-decoration: none;
-	display: inline-block;
-	width: 200px;
-	height: 22px;
-	text-align: center;
-	background: var(--primary-color);
-	border: 1px solid var(--primary-color);
-	border-radius: 3px;
-	padding: 5px;
-	color: var(--white); 
-	}
-
-#spotlight-link:hover {
-	background: var(--primary-dark); 
-	} 
-					
-#github-scores{
-	width:188px;
-	height:30px;
-	margin:40px auto;
-	border:0px solid #ddd;
-	margin-bottom:-2px;
-	}
-
-.githubs{
-	float:left;
-	width:94px;
-	height:30px;
-	border:0px solid #ddd;
-	transition: all 0.5s;
-	}
-
-.githubs:hover{
-	margin-top:-5px;
-	}
-
-.github-icon{
-	float:left;
-	}
-
-.github-icon img{
-	float:left;
-	}
-.github-data{
-	float:left;
-	font-size:11px;
-	margin-top:10px;
-	}
-				
-a.github-link:link,a.github-link:visited{
-	text-decoration:none;
-	color:#111;
-	}
-
-				
-#slogan-outer{
-	width: 100%;
-	height: 150px;
-	padding: 30px 0;
-	padding-bottom: 10px;
-	background: var(--white);
-	border-top:1px solid var(--section-border);
-	border-bottom:1px solid var(--section-border);
-	}  
-	
-#slogan-inner{
-	width:80%;
-	height:100px;
-	margin:0 auto;
-	}
-
-#slogan-title{
-	width: 100%;
-	font-size: 2rem;
-	text-align: center; 
-	}
-
-#slogan-text{
-	width: 60%;
-	margin: 10px auto;
-	font-size: 1rem;
-	text-align: center; 
-	line-height:26px;
-	}
-	  
-a.slogan-link:link, #slogan-holder a.slogan-link:visited{
-	color: var(--primary-color);
-	text-decoration: none;
-	text-align: center;
-	margin: 10px auto;
-	font-weight:600;
-	border-bottom: 1px dotted var(--primary-color); 
-	}  
-
-a.slogan-link:hover{
-	color: var(--primary-dark); 
-	}
-
-/* Under our Main text there starts 4 boxes linking to main points */
-section#important-links-outer{
-	float:left;
-	width:100%;
-	height:100%;
-	margin:0;
-	padding:10px 0;
-	background:var(--soft-white);
-	}
-
-#important-links-inner {
-	width:60%;
-	height:100%;
-	margin:10px auto;
-	}
-
-.important-link-boxes {
-	float: left;
-	text-align: center;
-	width: 23%; /*250px*/
-	height: 150px;
-	margin: 10px 5px;
-	padding: 10px;
-	box-sizing: border-box;
-	background: var(--white);
-	border: 1px solid #f1f1f1;
-	border-radius: 3px;
-	transition: all 0.5s; 
-	}
-	
-.important-link-boxes a:link, .important-link-boxes a:visited {
-	text-decoration: none; 
-	}
-	
-.important-link-boxes:hover {
-	box-shadow: 0 10px 10px #dbdbdb;
-	border: 1px solid #DFDFDF;
-	}
-
-/* Here is where content section starts */
-
-section#content-outer{
-	float:left;
-	width:100%;
-	height:100%;
-	margin:0;
-	padding:0;
-	background: #fff;
-	border-top: 1px solid var(--section-border);
-	}
-
-#content-inner {
-	width:80%;
-	height:100%;
-	margin:10px auto; 
-	}
-	
-.recent-news-and-forum-posts {
-	float: none;
-	display: inline-block;
-	width: 44%;
-	height: 100%;
-	margin: 35px auto; 
-	}
-	
-/* .margin-left below is extra for the right one */
-.margin-left {
-	margin-left: 6%; 
-	}
-
-/* rnafp is the abbr. of Recent News And Forum Posts, initials */
-.rnafp-name {
-	float: left;
-	display: block;
-	width: 100%;
-	height: 20px;
-	padding: 4px 6px;
-	margin-bottom:11px;
-	font-size: 14px;
-	color: var(--secondary-color);
-	font-size: 16px;
-	font-weight: 600; 
-	}
-.rnapf-row {
-	float: left;
-	display: block;	
-	width: 100%;
-	height: 44px;
-	padding: 10px 0;
-	border-bottom: 1px solid #f1f1f1;
-	border-left: 1px solid var(--soft-white);
-	transition: all 0.3s; 
-	}
-	
-	
-.rnapf-date {
-	float: left;
-	width: 20%;
-	height: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	color: var(--secondary-color); 
-	}
-
-.rnapf-title {
-	float: left;
-	width: 80%;
-	height: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	color: var(--secondary-color); 
-	}
-
-a.rnapf-title-link:link, a.rnapf-title-link:visited {
-	text-decoration: none; 
-	}
-
-/* section title class can be used for any section */
-.section-title {
-	font-size: 24px;
-	font-weight: 600;
-	text-align: center;
-	color: var(--primary-color); 
-	}
-
-#why-codeigniter-title{
-	margin-top:11px;
-	}
-
-.why-rows{
-	float:left;
-	width:100%;
-	height:157px;
-}
-/* Features boxes with icons */
-.ci-features-box {
-	float: left;
-	width: 45%;
-	height: 150px;
-	padding: 10px;
-	box-sizing: border-box;
-	border: 1px solid var(--white);
-	margin: 18px 10px 0 10px;
-	transition: box-shadow 0.5s;
-	transition: margin-top 0.5s; 
-	}
-	
-.ci-features-box:hover {
-	float: left;
-	border: 1px solid #f1f1f1;
-	background: var(--white);
-	box-shadow: 3px 3px 10px #eee;
-	margin-top: 14px; 
-	}
-
-.ci-features-box-icon {
-	float: left;
-	width: 60px;
-	height: 60px;
-	margin: 20px auto;
-	display: block; 
-	}
-	
-.ci-features-box-text-area {
-	float: left;
-	display: inline-block;
-	width: 80%;
-	height: 100px;
-	margin: 10px; 
-	}
-	
-.ci-features-box-title {
-	float: left;
-	padding: 5px;
-	box-sizing: border-box;
-	color: var(--secondary-color);
-	display: inline-block;
-	font-size: 16px;
-	font-weight: 600; 
-	}
-	
-.ci-features-box-text {
-	float: left;
-	width: 100%;
-	height: 90%;
-	padding: 5px;
-	box-sizing: border-box; 
-	}
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('#scroll-to-top').click(function(){
+				$("html").animate({ scrollTop: 0 }, "slow");
+			});
+	});
+</script>
 
 
-footer#footer-outer {
-	float:left;
-	width:100%;
-	height:50px;
-	background-color: var(--primary-color);
-	color: var(--white);
-	margin-top: 30px;
-	padding-top:13px;
-	box-sizing:border-box;
-	}
-	
-#footer-inner {
-	width:80%;
-	margin:0 auto;
-	height: 60px; 
-	margin-top:0;
-	}
-
-#footer-inner-left {
-	float: left;
-	width: 70%;
-	height: 40px; 
-	}
-
-a.footer-menu-item:link,a.footer-menu-item:visited{
-	float: left;
-	text-decoration: none;
-	color: var(--white);
-	padding: 4px 0;
-	margin: 0 10px;
-	transition: all 0.3s; 
-	height:40px;
-	}
-
-a.footer-menu-item:hover {
-	margin-top: -4px;
-	.border-bottom:1px solid #f4c3bd;  
-	}
-  
-#footer-inner-right {
-	float: right;
-	margin-top: 0;
-	width: 180px;
-	height: 60px;
-	}
-
-#footer-inner-right .links-icons{
-	float:left;
-	position:relative;
-	margin-top:-22px; 
-	width:60px; 
-	height:60px;
-	border:0px solid #ddd;
-	transition: all 2s ease;
-	}
-
-#footer-inner-right .links-icons .icon{
-	margin-bottom:0;
-	margin:20px auto;
-	transition: all 1s ease;
-	}
-
-#footer-inner-right .links-icons .data{
-	font-size:11px;
-	color:#111;
-	line-height:10px;
-	display:none;
-	transition: all 2s ease;
-	}
-				
-
-#footer-inner-right .links-icons:hover .icon{
-	margin:10px auto;
-	transition: all 0.5s ease;
-	}
-
-#footer-inner-right .links-icons:hover .data{
-	display:block;
-	color:#f5f5f5;
-	}
-
-#footer-copyrights {
-	float:left;
-	width: 100%;
-	height:90px;
-	background-color: var(--primary-dark);
-	color: #DFDFDF;
-	padding: 0.25rem 0;
-	box-sizing:border-box;
-	font-size: 80%; 
-	text-align: center; 
-	}
-
-#footer-copyrights img{
-	width:45px;
-	height:45px;
-	cursor:pointer;
-	margin:-10px;
-	}  
-
-
- a {
-  color: var(--primary-color); }
-
-.delay{
-	animation-delay: 0.3s;
-}
-
-
-.boldy300 {
-  font-weight: 300; }
-  
-.boldy400 {
-  font-weight: 400; }
-  
-.boldy600 {
-  font-weight: 600; }
- 
-.boldy700 {
-  font-weight: 700; }
- 
-.orange{
-	color:var(--primary-color);}
-.dark {
-  color: #252525; }
+</body>
+</html>
