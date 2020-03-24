@@ -144,7 +144,7 @@ footer#footer-outer {
 #footer-inner-right {
 	float: none;
 	margin: 10px auto;
-	width: 180px;
+	width: 240px;
 	height: 60px;
 	}	
 
@@ -232,7 +232,7 @@ a.footer-menu-item:hover{padding-left:10px;margin-top: 0;}
 #footer-inner-right {
 	float: left;
 	margin: 10px auto;
-	width: 180px;
+	width: 240px;
 	height: 60px;
 	}		
 }	/* 1100 ende */
@@ -561,7 +561,7 @@ a.footer-menu-item:hover {
 #footer-inner-right {
 	float: left;
 	margin: 10px 0 0 10px;
-	width: 180px;
+	width: 240px;
 	height: 60px;
 	}
 			
