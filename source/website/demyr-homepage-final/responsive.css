@@ -161,7 +161,7 @@ footer#footer-outer {
 .important-link-boxes {
 	float: left;
 	text-align: center;
-	width: 180px;
+	width: 23%;
 	height: 180px;
 	margin: 10px 5px;
 	padding: 10px;
@@ -428,7 +428,20 @@ section#spotlight-outer{
 	margin:10px auto;
 	}
 
-
+.important-link-boxes {
+	float: left;
+	text-align: center;
+	width: 46%;
+	height: 180px;
+	margin: 10px 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	background: var(--white);
+	border: 1px solid #f1f1f1;
+	border-radius: 3px;
+	transition: all 0.5s; 
+	}
+	
 .recent-news-and-forum-posts {
   float: none;
   width: 90%;
@@ -585,7 +598,7 @@ a.footer-menu-item:hover {
 	.important-link-boxes {
 	float: left;
 	text-align: center;
-	width: 200px;
+	width: 46%;
 	height: 180px;
 	margin: 10px 5px;
 	padding: 10px;
