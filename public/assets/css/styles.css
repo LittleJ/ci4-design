@@ -391,12 +391,12 @@ a.slogan-link:hover{
 
 /* Under our Main text there starts 4 boxes linking to main points */
 section#important-links-outer{
+  background-color: var(--soft-white);
 	float:left;
 	width:100%;
 	height:100%;
 	margin:0;
-	padding:10px 0;
-	background:var(--soft-white);
+	padding:1.5rem 0;
 	}
 
 #important-links-inner {
@@ -437,13 +437,12 @@ section#content-outer{
 	margin:0;
 	padding:0;
 	background: #fff;
-	border-top: 1px solid var(--section-border);
 	}
 
 #content-inner {
 	width:80%;
 	height:100%;
-	margin:10px auto;
+	margin:2rem auto;
 	}
 
 .recent-news-and-forum-posts {
@@ -451,7 +450,7 @@ section#content-outer{
 	display: inline-block;
 	width: 44%;
 	height: 100%;
-	margin: 35px auto;
+	margin: 4rem auto 3rem auto;
 	}
 
 /* .margin-left below is extra for the right one */
@@ -515,7 +514,7 @@ a.rnapf-title-link:link, a.rnapf-title-link:visited {
 	}
 
 #why-codeigniter-title{
-	margin-top:11px;
+	margin: 4rem 0 2rem 0;
 	}
 
 .why-rows{
