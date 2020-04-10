@@ -157,6 +157,70 @@ footer#footer-outer {
 	height: 60px;
 	}
 
+/* Discover Page */
+
+.years-left{
+	width:78%;
+	height:100%;
+	margin:30px auto;
+	padding:10px;
+	.border-left:2px solid #fff;
+}
+.years-right{
+	float:left;
+	width:78%;
+	height:100%;
+	margin:30px auto;
+	padding:10px;
+	.border-left:2px solid #fff;
+}
+
+.year-about{
+		float:left;
+		width:90%;
+		height:100%;
+		margin:10px 0;
+		padding:10px;
+	}
+	
+/* download page*/
+
+.ci-version-boxes{
+	width:100%;
+	height:100%; /*240px*/
+	margin:30px auto;
+	border:1px solid #fff/*var(--section-border)*/;
+	border-radius:5px;
+	box-sizing:border-box;
+	display:block;
+	overflow:auto;
+	position:relative;
+	transition: all 1s ease;
+}
+
+.cv-boxes-version{
+		float:none;
+		width:180px;
+		height:180px;
+		margin-top:100px;
+		margin-left:10px;
+		background: transparent;
+		display: table;
+		border:1px solid var(--primary-color);
+		border-radius:180px;/*5px 0 0 5px;*/
+		position:relative;
+
+}
+.cv-boxes-content{
+		float:none;
+		width:80%;
+		height:100%;
+		margin-top:-50px;
+		margin-left:2%;
+		padding-bottom:15px;
+		
+		
+	}	
 }
 
 
@@ -563,15 +627,28 @@ a.footer-menu-item:link,a.footer-menu-item:visited{
 	text-decoration: none;
 	color: var(--white);
 	padding: 4px 0;
-	margin: 0 10px;
+	margin: 7px 10px;
 	transition: all 0.3s;
-	height:40px;
+	height:20px;
 	}
 
 a.footer-menu-item:hover {
 	padding-left:10px;
 	}
 
+a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
+	float: left;
+	text-decoration: none;
+	.border-bottom:1px dotted #fff;
+	color: #fff;
+	padding: 10px;
+	margin: 10px;
+	transition: all 0.3s;
+	height:20px;
+	background:var(--primary-dark);
+	border-radius:5px;
+	}
+	
 #footer-inner-right {
 	float: left;
 	margin: 10px 0 0 10px;
@@ -598,7 +675,33 @@ a.footer-menu-item:hover {
 	margin:-10px;
 	}
 
+/* about page within discover */
 
+#about-page {
+	width:70%;
+	height:100%;
+	padding:30px;
+	position:relative;
+	margin:10px auto;
+	background:#fff;
+	border:1px solid var(--section-border);
+	border-radius:3px;
+	box-shadow: 5px 0 10px #eee;
+	display:none;
+	}
+	
+.profile{
+	float:left;
+	width:90%;
+	height:100%;
+	margin:10px;
+}
+
+.profile-info{
+	float:left;
+	width:75%;
+	margin:10px 0;
+}
 
 }
 
