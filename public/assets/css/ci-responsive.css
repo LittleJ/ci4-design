@@ -748,4 +748,109 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 	box-sizing: border-box;
 	color: var(--secondary-color);
 	}
+	
+	
+#breadcrumb-inner{
+		width:80%;
+		margin:0 auto;
+		color:#DD4814;
+		font-size:20px;
+		font-weight:400;
+		padding:10px 0;
+	}
+	
+.year-images-left{
+		float:left;
+		position:relative;
+		margin-left:10px;
+		width:90%;
+		height:200px;
+		background:var(--primary-color);
+		border-radius:3px;
+}
+
+.year-images-left img{
+			position:absolute;
+			top:-10px;
+			left:-10px;
+			border:1px solid #eee;
+			border-radius:3px;
+			width:100%;
+			height:auto;
+	}	
+	
+.year-images-right{
+		float:left;
+		position:relative;
+		margin-left:10px;
+		width:90%;
+		height:200px;
+		background:var(--primary-color);
+		border-radius:3px;
+	}
+	
+.year-images-right img{
+			position:absolute;
+			top:-10px;
+			right:-10px;
+			border:1px solid #eee;
+			border-radius:3px;
+			width:100%;
+			height:auto;
+		}
+			
+}
+
+/* MEDIA 400px ============================== */
+
+@media(max-width:400px){
+	#breadcrumb-inner{
+		width:80%;
+		margin:0 auto;
+		color:#DD4814;
+		font-size:16px;
+		font-weight:400;
+		padding:10px 0;
+	}
+
+.year-images-left{
+		float:left;
+		position:relative;
+		margin-left:10px;
+		width:90%;
+		height:120px;
+		background:var(--primary-color);
+		border-radius:3px;
+}
+
+.year-images-left img{
+			position:absolute;
+			top:-10px;
+			left:-10px;
+			border:1px solid #eee;
+			border-radius:3px;
+			width:100%;
+			height:auto;
+	}	
+	
+.year-images-right{
+		float:left;
+		position:relative;
+		margin-left:10px;
+		width:90%;
+		height:120px;
+		background:var(--primary-color);
+		border-radius:3px;
+	}
+	
+.year-images-right img{
+			position:absolute;
+			top:-10px;
+			right:-10px;
+			border:1px solid #eee;
+			border-radius:3px;
+			width:100%;
+			height:auto;
+		}
+				
 }
