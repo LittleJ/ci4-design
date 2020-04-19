@@ -874,6 +874,7 @@ a.footer-menu-item:hover {
 	background:#fff;
 	margin:10px auto;
 	padding:10px;
+	border:1px solid var(--section-border);
 	box-sizing:border-box;
 	border-radius:3px;
 	overflow:auto;
