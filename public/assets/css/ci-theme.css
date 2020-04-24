@@ -813,7 +813,6 @@ a.footer-menu-item:hover {
 	height:120px;
 	background-color: var(--primary-dark);
 	color: #DFDFDF;
-	padding: 0.25rem 0;
 	box-sizing:border-box;
 	font-size: 80%;
 	text-align: center;
