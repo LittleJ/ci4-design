@@ -853,6 +853,7 @@ a.footer-menu-item:hover {
 	box-sizing:border-box;
 	border:1px solid var(--section-border);
 	border-radius:3px;
+	box-shadow: 0px 5px 10px #eee;
 }			
 
 .inner-page-text-box-title{
