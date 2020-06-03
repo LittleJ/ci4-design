@@ -1093,7 +1093,8 @@ section#content-outer-discover{
 /* DOWNLOAD PAGE ------------------------------------------------------------ */
 
 .ci-version-boxes{
-	width:80%;
+	float:left;
+	width:32%;
 	height:100%; /*240px*/
 	margin:30px auto;
 	border:1px solid #fff/*var(--section-border)*/;
