@@ -1093,9 +1093,13 @@ section#content-outer-discover{
 /* DOWNLOAD PAGE ------------------------------------------------------------ */
 
 .ci-version-boxes{
-	width:80%;
+	float:left;
+	width:31%;
 	height:100%; /*240px*/
-	margin:30px auto;
+	margin-top:30px;
+	margin-bottom:45px;
+	margin-right:2%;
+	padding-bottom:30px;
 	border:1px solid var(--section-border);
 	border-radius:5px;
 	box-sizing:border-box;
@@ -1104,6 +1108,11 @@ section#content-outer-discover{
 	position:relative;
 	transition: all 1s ease;
 }
+.ci-version-boxes:nth-of-type(1){
+	.width:34%;
+	box-shadow: 5px 10px 10px #eee;
+	border:1px solid var(--primary-color);
+}
 
 .ci-version-boxes:hover{
 	.background:var(--soft-white);
@@ -1111,18 +1120,18 @@ section#content-outer-discover{
 	border:1px solid var(--primary-color);
 }
 .cv-boxes-version{
-		float:left;
+		.float:left;
 		width:180px;
 		height:180px;
-		margin-top:0;
-		margin-left:10px;
+		margin:30px auto;
+		.margin-left:10px;
 		background: transparent;
 		display: table;
 		border:1px solid var(--primary-color);
 		border-radius:180px;/*5px 0 0 5px;*/
-		position:absolute;
-		top: 50%;
-  transform: translateY(-50%);
+		/*position:absolute;
+		top: 50%;*/
+  .transform: translateY(-15px);
 }
 	
 .version-name{
@@ -1140,18 +1149,11 @@ span.version-no{
 }
 
 .cv-boxes-content{
-		float:left;
-		width:70%;
+		width:80%;
 		height:100%;
-		margin-top:2%;
-		margin-left:25%;
+		margin:45px auto;
 		padding-bottom:15px;
-		
-		
-	}
-	
-a.download-buttons:nth-of-type(1){
-	margin-left:0;
+		text-align:justify;
 }
 			
 /* CONTRIBUTE ----------------------------------------------------------*/			
