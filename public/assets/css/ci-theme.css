@@ -1108,11 +1108,11 @@ section#content-outer-discover{
 	position:relative;
 	transition: all 1s ease;
 }
-.ci-version-boxes:nth-of-type(1){
+/*.ci-version-boxes:nth-of-type(1){
 	.width:34%;
 	box-shadow: 5px 10px 10px #eee;
 	border:1px solid var(--primary-color);
-}
+}*/
 
 .ci-version-boxes:hover{
 	.background:var(--soft-white);
