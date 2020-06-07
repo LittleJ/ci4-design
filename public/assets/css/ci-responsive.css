@@ -882,8 +882,12 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 	height: 100px;
 	margin: 10px;
 	}
-	
-	#breadcrumb-inner{
+
+.rnapf-title{
+	font-size:14px;
+	}	
+
+#breadcrumb-inner{
 		width:80%;
 		margin:0 auto;
 		color:#DD4814;
