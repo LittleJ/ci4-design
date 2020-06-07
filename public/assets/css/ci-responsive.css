@@ -851,6 +851,38 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 /* MEDIA 400px ============================== */
 
 @media(max-width:400px){
+	
+#spotlight-version {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -10px;
+	right: -20px;
+	font-size: 2rem;
+	color: var(--primary-color);
+	text-align: center;
+}
+	
+.ci-features-box {
+	float: left;
+	width: 45%;
+	height: 210px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid var(--white);
+	margin: 18px 10px 0 10px;
+	transition: box-shadow 0.5s;
+	transition: margin-top 0.5s;
+}
+
+.ci-features-box-text-area {
+	float: left;
+	display: inline-block;
+	width: 65%;
+	height: 100px;
+	margin: 10px;
+	}
+	
 	#breadcrumb-inner{
 		width:80%;
 		margin:0 auto;
@@ -871,13 +903,13 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 }
 
 .year-images-left img{
-			position:absolute;
-			top:-10px;
-			left:-10px;
-			border:1px solid #eee;
-			border-radius:3px;
-			width:100%;
-			height:auto;
+		position:absolute;
+		top:-10px;
+		left:-10px;
+		border:1px solid #eee;
+		border-radius:3px;
+		width:100%;
+		height:auto;
 	}	
 	
 .year-images-right{
