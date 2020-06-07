@@ -710,7 +710,7 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 /* download page*/
 
 .ci-version-boxes{
-	width:90%;
+	width:100%;
 	height:100%; /*240px*/
 	margin:30px auto;
 	border:1px solid var(--section-border);
