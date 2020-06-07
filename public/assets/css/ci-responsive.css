@@ -857,7 +857,7 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 	height: 50px;
 	position: absolute;
 	top: -10px;
-	right: -20px;
+	right: -30px;
 	font-size: 2rem;
 	color: var(--primary-color);
 	text-align: center;
@@ -865,7 +865,7 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 	
 .ci-features-box {
 	float: left;
-	width: 45%;
+	width: 90%;
 	height: 210px;
 	padding: 10px;
 	box-sizing: border-box;
