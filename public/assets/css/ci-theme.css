@@ -1095,7 +1095,7 @@ section#content-outer-discover{
 .ci-version-boxes{
 	float:left;
 	width:31%;
-	height:100%; /*240px*/
+	min-height:700px; /*100%*/
 	margin-top:30px;
 	margin-bottom:45px;
 	margin-right:2%;
