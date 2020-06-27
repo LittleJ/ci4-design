@@ -890,6 +890,11 @@ a.footer-menu-item:hover {
 	font-weight:600;
 }
 
+.inner-page-text-sub-box p{
+	width:80%;
+	margin:0 auto;
+}
+
 /* DISCOVER Page -------------------------------------------------------------- */
 
 section#content-outer-discover{
