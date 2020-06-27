@@ -156,7 +156,7 @@
 
 .warning{
 	background-color:var(--primary-color);
-	width:100%;
+	width:90%;
 	height:100%;
 	padding:10px;
 	box-sizing:border-box;
@@ -845,7 +845,7 @@ a.footer-menu-item:hover {
 	}
 
 .inner-page-text-box{
-	width:100%;
+	width:90%;
 	height:100%;
 	background:#f7f7f7;
 	margin:30px auto;
@@ -862,7 +862,7 @@ a.footer-menu-item:hover {
 }
 
 #inner-page-opening-text{
-	width: 100%;
+	width: 90%;
 	margin: 10px auto;
 	text-align: justify;
 	border: 1px solid #eee;
@@ -873,7 +873,7 @@ a.footer-menu-item:hover {
 }	
 
 .inner-page-text-sub-box{
-	width:100%;
+	width:90%;
 	height:100%;
 	background:#fff;
 	margin:10px auto;
@@ -891,8 +891,9 @@ a.footer-menu-item:hover {
 }
 
 .inner-page-text-sub-box p{
-	width:80%;
+	width:100%;
 	margin:0 auto;
+	line-height:24px;
 }
 
 /* DISCOVER Page -------------------------------------------------------------- */
