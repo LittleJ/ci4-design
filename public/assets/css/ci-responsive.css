@@ -55,6 +55,10 @@
 
 @media(max-width:1300px) {
 
+    #content-inner {
+        width: 80%;
+    }
+
 	#important-links-inner {
 	width:80%;
 	height:100%;
@@ -64,9 +68,7 @@
 .important-link-boxes {
 	float: left;
 	text-align: center;
-	width: 200px;
 	height: 200px;
-	margin: 10px 5px;
 	padding: 10px;
 	box-sizing: border-box;
 	background: var(--white);
@@ -74,6 +76,12 @@
 	border-radius: 3px;
 	transition: all 0.5s;
 	}
+
+    #important-links-inner .outer-box {
+        float: left;
+        width: 23%;
+        padding: 5px;
+    }
 
 .rnapf-date {
 	float: left;

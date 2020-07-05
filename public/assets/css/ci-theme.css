@@ -512,7 +512,7 @@ section#content-outer{
 	}
 
 #content-inner {
-	width:80%;
+	width:60%;
 	height:100%;
 	margin:2rem auto;
 	}
@@ -539,14 +539,13 @@ section#content-outer{
 	float:left;
 	width:100%;
 	height:157px;
-    padding-left: 15%;
 }
 
 /* Features ----------------------------------------------------------------- */
 
 .ci-features-box {
 	float: left;
-	width: 35%;
+	width: 48%;
 	height: 150px;
 	padding: 10px;
 	box-sizing: border-box;
@@ -603,7 +602,7 @@ section#content-outer{
 .recent-news-and-forum-posts {
 	float: none;
 	display: inline-block;
-	width: 46%;
+	width: 49%;
 	height: 100%;
 	margin: 38px auto 3rem auto;
 	}
@@ -673,16 +672,21 @@ section#important-links-outer{
 	}
 
 #important-links-inner {
-	width:60%;
 	height:100%;
 	margin:10px auto;
+    width: 60%;
 	}
 
+#important-links-inner .outer-box{
+    float: left;
+    width: 24%;
+    padding: 5px;
+}
+
 .important-link-boxes {
-	float: left;
+    width: 100%;
 	text-align: center;
-	width: 23%; /*250px*/
-	margin: 10px 5px;
+    margin: 10px 5px;
 	padding: 15px 10px 10px 10px;
 	box-sizing: border-box;
 	background: var(--white);
