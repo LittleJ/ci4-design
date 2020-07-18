@@ -215,7 +215,6 @@ footer#footer-outer {
 		position:relative;
 
 }
-	
 .cv-boxes-content{
 		
 		text-align:justify;
@@ -224,7 +223,8 @@ footer#footer-outer {
 		margin:50px auto;
 		padding-bottom:15px;
 		
-	}		
+		
+	}	
 }
 
 
@@ -340,8 +340,15 @@ header {
 	margin:7.5px auto;
 	}
 
+#mobile-search{
+	display:block;
+	float:left;
+	margin:15px;
+}
+
 #menu-toggle {
 	display: block;
+	margin-top:5px;
 	width:40px;
 	float: right;
 	font-size: 2rem;
@@ -424,6 +431,12 @@ a.top-menu-item-download {
 	}
 
 a.download-button{
+	display:none;
+}
+#search{
+	display:none;
+}
+#search-bar{
 	display:none;
 }
 
@@ -603,7 +616,6 @@ section#spotlight-outer{
 	}
 
 
-
 footer#footer-outer {
 	float:left;
 	width:100%;
@@ -710,7 +722,7 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 /* download page*/
 
 .ci-version-boxes{
-	width:100%;
+	width:90%;
 	height:100%; /*240px*/
 	margin:30px auto;
 	border:1px solid var(--section-border);
@@ -739,7 +751,6 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 		position:relative;
 
 }
-	
 .cv-boxes-content{
 		
 		text-align:justify;
@@ -747,6 +758,7 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 		height:100%;
 		margin:50px auto;
 		padding-bottom:15px;
+		
 		
 	}	
 	
@@ -851,43 +863,7 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 /* MEDIA 400px ============================== */
 
 @media(max-width:400px){
-	
-#spotlight-version {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	top: -10px;
-	right: -30px;
-	font-size: 2rem;
-	color: var(--primary-color);
-	text-align: center;
-}
-	
-.ci-features-box {
-	float: left;
-	width: 90%;
-	height: 210px;
-	padding: 10px;
-	box-sizing: border-box;
-	border: 1px solid var(--white);
-	margin: 18px 10px 0 10px;
-	transition: box-shadow 0.5s;
-	transition: margin-top 0.5s;
-}
-
-.ci-features-box-text-area {
-	float: left;
-	display: inline-block;
-	width: 65%;
-	height: 100px;
-	margin: 10px;
-	}
-
-.rnapf-title{
-	font-size:14px;
-	}	
-
-#breadcrumb-inner{
+	#breadcrumb-inner{
 		width:80%;
 		margin:0 auto;
 		color:#DD4814;
@@ -907,13 +883,13 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 }
 
 .year-images-left img{
-		position:absolute;
-		top:-10px;
-		left:-10px;
-		border:1px solid #eee;
-		border-radius:3px;
-		width:100%;
-		height:auto;
+			position:absolute;
+			top:-10px;
+			left:-10px;
+			border:1px solid #eee;
+			border-radius:3px;
+			width:100%;
+			height:auto;
 	}	
 	
 .year-images-right{
