@@ -32,12 +32,17 @@
 				<button onclick="toggleMenu();">&#9776;</button>
 			</div>
 		<div id="top-menu">
-					<a href="discover.html" class="top-menu-item hidden" title="CodeIgniter.com">Discover</a>
-					<a href="learn.html" class="top-menu-item hidden" title="CodeIgniter.com">Learn</a>
-					<a href="discuss.html" class="top-menu-item hidden" title="User guide">Discuss</a>
-					<a href="contribute.html" class="top-menu-item hidden" title="Forum">Contribute</a>
-					<a href="download.html" class="top-menu-item-download" class="top-menu-item hidden" title="Github">Download</a>
+					<!--<a href="discover.html" class="top-menu-item hidden" title="CodeIgniter.com">Discover</a>-->
+					<a href="news.html" class="top-menu-item">News</a>
+					<a href="discuss.html" class="top-menu-item">Discuss</a>
+					<a href="contribute.html" class="top-menu-item">Contribute</a>
+					<a href="javascript:void(0)" id="search" class="top-menu-item">Search</a>
+					<a href="download.html" class="top-menu-item-download" class="top-menu-item-active">Download</a>
 		</div><!--top-menu ende-->
+		<div class="clr"></div>
+		<div id="search-bar">
+			<input type="text" placeholder="Type here + Enter" id="search-bar-input" name="search" />
+		</div><!--search-bar ends here-->
 	</div><!--header inner ende-->
 		<!--<a href="#" class="download-button" class="top-menu-item hidden" title="Github">Download</a>-->
 </header>
@@ -52,63 +57,66 @@
 <div class="clr"></div>
 <section id="content-outer">
 	<div id="content-inner">
+			<div class="ci-version-boxes">
+				<div class="cv-boxes-version">
+					<div class="version-name">CODEIGNITER <br />
+						<span class="version-no">4</span>
+					</div>
+				</div><!--cv-boxes-version ende-->
+				<div class="cv-boxes-content">
+					<p>CodeIgniter 4 is the latest version of the framework, intended for use with PHP 7.2.</p> 
+					<p>Development was released on 24th of February, 2020. The current version is v4.0.2. </p>
+					<p>You *could* download the V4 framework using the button below, but we encourage you to <a href="https://codeigniter4.github.io/userguide/installation/index.html" class="link-primary">check</a> the Installation section of the User Guide, 
+	to choose from several different ways you can install the framework :) </p>
+						<div class="clr"></div>
+					<div class="cv-boxes-buttons-area">
+						<a href="#" class="buttons-reverse download-buttons">Download</a>
+						<a href="#" class="buttons-reverse download-buttons">Discuss</a>
+						<a href="#" class="buttons-reverse download-buttons">Sources</a>
+						<a href="#" class="buttons-reverse download-buttons">Translations</a>
+					</div><!--cv-boxes-buttons-area ends here-->	
+				</div><!--cv-boxes-content ends here-->
+			</div><!--ci-version-boxes ende-->
 		
-		<div class="ci-version-boxes">
-			<div class="cv-boxes-version">
-				<div class="version-name">CODEIGNITER <br />
-					<span class="version-no">4</span>
-				</div>
-			</div><!--cv-boxes-version ende-->
-			<div class="cv-boxes-content">
-				<p>CodeIgniter 4 is the latest version of the framework, intended for use with PHP 7.2.</p> 
-				<p>Development was released on 24th of February, 2020. The current version is v4.0.2. </p>
-				<p>You *could* download the V4 framework using the button below, but we encourage you to <a href="https://codeigniter4.github.io/userguide/installation/index.html" class="link-primary">check</a> the Installation section of the User Guide, 
-to choose from several different ways you can install the framework :) </p>
-					<div class="clr"></div>
-					<a href="#" class="buttons-reverse download-buttons">Download</a>
-					<a href="#" class="buttons-reverse download-buttons">Discuss</a>
-					<a href="#" class="buttons-reverse download-buttons">Sources</a>
-					<a href="#" class="buttons-reverse download-buttons">Translations</a>
-			</div><!--cv-boxes-content ends here-->
-		</div><!--ci-version-boxes ende-->	
-		
-		<div class="ci-version-boxes">
-			<div class="cv-boxes-version">
-				<div class="version-name">CODEIGNITER <br />
-					<span class="version-no">3</span>
-				</div>
-			</div><!--cv-boxes-version ende-->
-			<div class="cv-boxes-content">
-				<p>CodeIgniter 3.1.11 is the current version of the framework, intended for use with PHP 5.6+</p> 
-				<p>There have been a number of refinements since version 2, notably with the database, session handling and encryption. 
-				Development of this version is ongoing. </p>
+			
+			<div class="ci-version-boxes">
+				<div class="cv-boxes-version">
+					<div class="version-name">CODEIGNITER <br />
+						<span class="version-no">3</span>
+					</div>
+				</div><!--cv-boxes-version ende-->
+				<div class="cv-boxes-content">
+					<p>CodeIgniter 3.1.11 is the current version of the framework, intended for use with PHP 5.6+</p> 
+					<p>There have been a number of refinements since version 2, notably with the database, session handling and encryption. 
+					Development of this version is ongoing. </p>
+					
+						<div class="clr"></div>
+					<div class="cv-boxes-buttons-area">	
+						<a href="#" class="buttons-reverse download-buttons">Download</a>
+						<a href="#" class="buttons-reverse download-buttons">Sources</a>
+						<a href="#" class="buttons-reverse download-buttons">Translations</a>
+					</div><!--cv-boxes-buttons-area ends-->
+				</div><!--cv-boxes-content ends here-->
+			</div><!--ci-version-boxes ende-->
 				
-					<div class="clr"></div>
-				
-					<a href="#" class="buttons-reverse download-buttons">Download</a>
-					<a href="#" class="buttons-reverse download-buttons">Sources</a>
-					<a href="#" class="buttons-reverse download-buttons">Translations</a>
-			</div><!--cv-boxes-content ends here-->
-		</div><!--ci-version-boxes ende-->	
-		
-		<div class="ci-version-boxes">
-			<div class="cv-boxes-version">
-				<div class="version-name">CODEIGNITER <br />
-					<span class="version-no">2</span>
-				</div>
-			</div><!--cv-boxes-version ende-->
-			<div class="cv-boxes-content">
-				<p>CodeIgniter 2.2.6 is the legacy version of the framework.</p> 
-				<p>The 2.x branch was originally released January 2011, and the last version (2.2.6) came out in October, 2015. </p>
-				<p>CodeIgniter 2 has reached its end-of-life for support and updates, as of October 31, 2015. No further updates are planned.</p>
-				
-					<div class="clr"></div>
-				
-					<a href="#" class="buttons-reverse download-buttons">Download</a>
-
-			</div><!--cv-boxes-content ends here-->
-		</div><!--ci-version-boxes ende-->		
-		
+			
+			<div class="ci-version-boxes">
+				<div class="cv-boxes-version">
+					<div class="version-name">CODEIGNITER <br />
+						<span class="version-no">2</span>
+					</div>
+				</div><!--cv-boxes-version ende-->
+				<div class="cv-boxes-content">
+					<p>CodeIgniter 2.2.6 is the legacy version of the framework.</p> 
+					<p>The 2.x branch was originally released January 2011, and the last version (2.2.6) came out in October, 2015. </p>
+					<p>CodeIgniter 2 has reached its end-of-life for support and updates, as of October 31, 2015. No further updates are planned.</p>
+					
+						<div class="clr"></div>
+					<div class="cv-boxes-buttons-area">
+						<a href="#" class="buttons-reverse download-buttons">Download</a>
+					</div><!--cv-boxes-buttons-area ends-->
+				</div><!--cv-boxes-content ends here-->
+			</div><!--ci-version-boxes ende-->		
 	</div><!--content-inner ends here-->
 </div><!--section ende-->
 
@@ -119,13 +127,12 @@ to choose from several different ways you can install the framework :) </p>
 <footer id="footer-outer">
   <div id="footer-inner">
     <div id="footer-inner-left">
-          <a href="policies.html" class="footer-menu-item" title="CodeIgniter.com">Policies</a>
-          <a href="the-fine-print.html" class="footer-menu-item" title="CodeIgniter.com">The Fine Print</a>
-          <a href="discover.html" class="footer-menu-item" title="CodeIgniter.com">Discover</a>
-          <a href="learn.html" class="footer-menu-item"title="CodeIgniter.com">Learn</a>
-          <a href="discuss.html" class="footer-menu-item" title="User guide">Discuss</a>
-          <a href="contribute.html" class="footer-menu-item" title="Forum">Contribute</a>
-          <a href="download.html" class="footer-menu-item-active" title="Github">Download</a>
+          <a href="policies.html" class="footer-menu-item" >Policies</a>
+          <a href="the-fine-print.html" class="footer-menu-item" >The Fine Print</a>
+          <a href="news.html" class="footer-menu-item">News</a>
+          <a href="discuss.html" class="footer-menu-item" >Discuss</a>
+          <a href="contribute.html" class="footer-menu-item" >Contribute</a>
+          <a href="download.html" class="footer-menu-item-active" >Download</a>
     </div><!--footer-inner-left ends here-->
 
     <div id="footer-inner-right">
@@ -197,18 +204,6 @@ to choose from several different ways you can install the framework :) </p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!--
-<script>
-  function togglseMenu() {
-    var menuItems = document.getElementsByClassName('menu-item');
-    for (var i = 0; i < menuItems.length; i++) {
-      var menuItem = menuItems[i];
-      menuItem.classList.toggle("hidden");
-    }
-  }
-</script>
--->
-
 <script type="text/javascript">
 	$(document).ready(function(){
 	  $('#menu-toggle button').click(function(){
@@ -225,6 +220,20 @@ to choose from several different ways you can install the framework :) </p>
 	});
 </script>
 
+<script>
+	$(document).ready(function(){
+		$('#search').click(function(){
+			$maxHeight = 120;
+			if($('#header-inner').height() < $maxHeight){
+			$('#header-inner').animate({'height': '120'}, 'slow');
+		}else{
+			$('#header-inner').animate({'height': '60'}, 'slow');
+		}
+		});
+		
+		
+	});
+</script>
 
 </body>
 </html>

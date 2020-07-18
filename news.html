@@ -28,113 +28,90 @@
 			  </svg>
 			</a>
 		</div>
+		<div id="mobile-search">
+			<input type="text" placeholder="Type here + Enter" id="search-bar-input" name="search" />
+		</div><!--mobile-search ends-->
 			<div id="menu-toggle">
 				<button onclick="toggleMenu();">&#9776;</button>
 			</div>
 		<div id="top-menu">
 					<!--<a href="discover.html" class="top-menu-item hidden" title="CodeIgniter.com">Discover</a>-->
-					<a href="news.html" class="top-menu-item">News</a>
-					<a href="discuss.html" class="top-menu-item-active">Discuss</a>
+					<a href="news.html" class="top-menu-item-active">News</a>
+					<a href="discuss.html" class="top-menu-item">Discuss</a>
 					<a href="contribute.html" class="top-menu-item">Contribute</a>
 					<a href="javascript:void(0)" id="search" class="top-menu-item">Search</a>
-					<a href="download.html" class="top-menu-item-download" class="top-menu-item">Download</a>
+					<a href="download.html" class="top-menu-item-download" class="top-menu-item-active">Download</a>
 		</div><!--top-menu ende-->
 		<div class="clr"></div>
 		<div id="search-bar">
 			<input type="text" placeholder="Type here + Enter" id="search-bar-input" name="search" />
 		</div><!--search-bar ends here-->
 	</div><!--header inner ende-->
+		<!--<a href="#" class="download-button" class="top-menu-item hidden" title="Github">Download</a>-->
 </header>
 
 <div class="clr"></div>
 
 	<div id="breadcrumb-outer">
-		<div id="breadcrumb-inner"><span class="boldy600">CONTRIBUTE </span>| WELCOME TO THE COMMUNITY</div>
+		<div id="breadcrumb-inner"><span class="boldy600">BREAKING NEWS </span>| ABOUT CODEIGNITER</div>
 	</div>
 
 <!-- CONTENT -->
 <div class="clr"></div>
-<section id="content-outer">
-	<div id="content-inner">
-		<div id="discuss-icon-holder">
-			<img src="public/assets/icons/forum-new.png" id="discuss-icon"/>
+<section id="content-outer-news">
+	<div id="content-inner-news">
+		<div id="news-left-column">
+			<a href="#" class="news-left-years-active">2020</a>
+			<a href="#" class="news-left-years">2019</a>
+			<a href="#" class="news-left-years">2018</a>
+		</div>
+	
+		<div id="news-column">
+			<div class="news-box">
+				<div class="news-box-title">CodeIgniter v4.0.4 released</div> <div class="news-date">10.07.2020</div>
+					<div class="clr"></div>
 				<p>
-				CodeIgniter is a community-developed open source project, with several venues for the community members to gather 
-				and exchange ideas.
+				Hey all - thanks to huge help from the community I'm happy to announce the release of version 4.0.4.
 				</p>
-		</div><!--icon ends here-->
-			
-	<div class="clr"></div>
+				<p>
+				There are a quite a number of bug-fixes as people use the framework more. 
+				Along with that there's a pretty long list of enhancements (see changelog).
+				</p>
+				<p>
+				In particular, though, I'm really proud to see new testing capabilities made available 
+				to you with Fabricators added to allow easily generating sample data for your Models while testing. 
+				Also a number of things streamlined within Feature testing. Thanks to MGatner for those updates.
+				</p>
 
-		<div class="warning">
-			<p>
-			Security issues should be reported with an email to our <a href="mailto:security@codeigniter.com" class="link-reverse">security team</a>, rather than being brought up on the forum or 
-			raised as a Github issue, thanks!
-			</p>
-		</div><!--warning ends here-->
-			
-	<div class="clr"></div>		
-
-			<div class="inner-page-text-box">			
-				<div class="inner-page-text-box-title">Forum</div>
-				<p>
-				Our forum has been setup using MyBB, with five main categories: <br />
-				</p>	
-				<ul>
-					<li>General (news & discussion, lounge, events, and regional user groups)</li>
-					<li>Using CodeIgniter (choosing CodeIgniter, installation & setup, model-view-controller, 
-						libraries & helpers, best practices, and general help)</li>
-					<li>CodeIgniter 4 (Roadmap, Development, feature requests, support, discussion)</li>
-					<li>Development (CodeIgniter 3.x, CodeIgniter 2.x, and issues)</li>
-					<li>External Resources (addins, jobs, learn more, and spotlight)</li>
-				</ul>
-				<p>
-				The forum is where you can ask for help or discuss issues you are having with framework.<br />
-				<a href="#" class="buttons-reverse">Visit The Forum</a>
-				</p>
-				<br /><br />
-			</div><!--inner-page-text-box ende-->
-		
-	<div class="clr"></div>
-				
-
-			<div class="inner-page-text-box">			
-				<div class="inner-page-text-box-title">Slack</div>
-				<p>
-				CodeIgniter has a Slack channel, where you can engage with other members of the community. Anyone can <a href="http://codeignitersignup.ciblox.com/" class="link-primary">signup</a> for it :)
-				</p>	
-				
-				<p>
-				<a href="#" class="buttons-reverse">Slack</a>
-				</p>
-				<br /><br />
-			</div><!--inner-page-text-box ends here-->
-
-<div class="clr"></div>			
-
-			<div class="inner-page-text-box">			
-				<div class="inner-page-text-box-title">Github</div>
-				<p>
-				The development action takes place on Github. See the contribute page for more details.
-				</p>	
-				<p class="boldy600">
-				The Github repository is where you can file bug reports (github issues), or where you can submit pull requests 
-				for enhancements to or fixes for framework. Github is *not* for support or help ... use the forum instead.
-				</p>
-				<p>
-				Github issues are also used for tracking planned and approved enhancements, often tied in to specific releases.
-				</p>
-				<p>
-				<a href="#" class="buttons-reverse">CodeIgniter 3</a>
-				<a href="#" class="buttons-reverse">CodeIgniter 4</a>
-				</p>
-				<br /><br />
-			</div><!--inner-page-text-box ends here-->
+				<a href="#" class="buttons-reverse">Read More</a>
+			</div><!--news-box ends here-->
 
 <div class="clr"></div>
 
-	</div><!--content-inner ends here-->
-</div><!--section ende-->
+			<div class="news-box">
+				<div class="news-box-title">Welcoming Michal Sniatala aboard</div> <div class="news-date">10.07.2020</div>
+					<div class="clr"></div>
+				<p>
+				Hey all - thanks to huge help from the community I'm happy to announce the release of version 4.0.4.
+				</p>
+				<p>
+				There are a quite a number of bug-fixes as people use the framework more. 
+				Along with that there's a pretty long list of enhancements (see changelog).
+				</p>
+				<p>
+				In particular, though, I'm really proud to see new testing capabilities made available 
+				to you with Fabricators added to allow easily generating sample data for your Models while testing. 
+				Also a number of things streamlined within Feature testing. Thanks to MGatner for those updates.
+				</p>
+
+				<a href="#" class="buttons-reverse">Read More</a>
+			</div><!--news-box ends here-->
+		</div><!--news-column ends-->
+<div class="clr"></div>
+		
+
+	</div><!--content inner ends-->
+</section><!--section ende-->
 
 
 <div class="clr"></div>
@@ -145,8 +122,8 @@
     <div id="footer-inner-left">
           <a href="policies.html" class="footer-menu-item" >Policies</a>
           <a href="the-fine-print.html" class="footer-menu-item" >The Fine Print</a>
-          <a href="news.html" class="footer-menu-item">News</a>
-          <a href="discuss.html" class="footer-menu-item-active" >Discuss</a>
+          <a href="news.html" class="footer-menu-item-active">News</a>
+          <a href="discuss.html" class="footer-menu-item" >Discuss</a>
           <a href="contribute.html" class="footer-menu-item" >Contribute</a>
           <a href="download.html" class="footer-menu-item" >Download</a>
     </div><!--footer-inner-left ends here-->
@@ -220,17 +197,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!--
-<script>
-  function togglseMenu() {
-    var menuItems = document.getElementsByClassName('menu-item');
-    for (var i = 0; i < menuItems.length; i++) {
-      var menuItem = menuItems[i];
-      menuItem.classList.toggle("hidden");
-    }
-  }
-</script>
--->
 
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -262,6 +228,5 @@
 		
 	});
 </script>
-
 </body>
 </html>
