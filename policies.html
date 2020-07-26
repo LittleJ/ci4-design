@@ -28,16 +28,26 @@
 			  </svg>
 			</a>
 		</div>
+		
+		<div id="mobile-search">
+			<input type="text" placeholder="Type here + Enter" id="search-bar-input" name="search" />
+		</div><!--mobile-search ends-->
+		
 			<div id="menu-toggle">
 				<button onclick="toggleMenu();">&#9776;</button>
 			</div>
 		<div id="top-menu">
-					<a href="discover.html" class="top-menu-item hidden" title="CodeIgniter.com">Discover</a>
-					<a href="learn.html" class="top-menu-item hidden" title="CodeIgniter.com">Learn</a>
-					<a href="discuss.html" class="top-menu-item hidden" title="User guide">Discuss</a>
-					<a href="contribute.html" class="top-menu-item hidden" title="Forum">Contribute</a>
-					<a href="download.html" class="top-menu-item-download" class="top-menu-item hidden" title="Github">Download</a>
+					<!--<a href="discover.html" class="top-menu-item hidden" title="CodeIgniter.com">Discover</a>-->
+					<a href="news.html" class="top-menu-item hidden">News</a>
+					<a href="discuss.html" class="top-menu-item hidden">Discuss</a>
+					<a href="contribute.html" class="top-menu-item hidden">Contribute</a>
+					<a href="javascript:void(0)" id="search" class="top-menu-item">Search</a>
+					<a href="download.html" class="top-menu-item-download" class="top-menu-item hidden">Download</a>
 		</div><!--top-menu ende-->
+		<div class="clr"></div>
+		<div id="search-bar">
+			<input type="text" placeholder="Type here + Enter" id="search-bar-input" name="search" />
+		</div><!--search-bar ends here-->
 	</div><!--header inner ende-->
 		<!--<a href="#" class="download-button" class="top-menu-item hidden" title="Github">Download</a>-->
 </header>
@@ -126,13 +136,12 @@
 <footer id="footer-outer">
   <div id="footer-inner">
     <div id="footer-inner-left">
-          <a href="policies.html" class="footer-menu-item-active" title="CodeIgniter.com">Policies</a>
-          <a href="the-fine-print.html" class="footer-menu-item" title="CodeIgniter.com">The Fine Print</a>
-          <a href="discover.html" class="footer-menu-item" title="CodeIgniter.com">Discover</a>
-          <a href="learn.html" class="footer-menu-item"title="CodeIgniter.com">Learn</a>
-          <a href="discuss.html" class="footer-menu-item" title="User guide">Discuss</a>
-          <a href="contribute.html" class="footer-menu-item" title="Forum">Contribute</a>
-          <a href="download.html" class="footer-menu-item" title="Github">Download</a>
+          <a href="policies.html" class="footer-menu-item-active" >Policies</a>
+          <a href="the-fine-print.html" class="footer-menu-item" >The Fine Print</a>
+          <a href="news.html" class="footer-menu-item">News</a>
+          <a href="discuss.html" class="footer-menu-item" >Discuss</a>
+          <a href="contribute.html" class="footer-menu-item" >Contribute</a>
+          <a href="download.html" class="footer-menu-item" >Download</a>
     </div><!--footer-inner-left ends here-->
 
     <div id="footer-inner-right">
@@ -232,6 +241,20 @@
 	});
 </script>
 
+<script>
+	$(document).ready(function(){
+		$('#search').click(function(){
+			$maxHeight = 120;
+			if($('#header-inner').height() < $maxHeight){
+			$('#header-inner').animate({'height': '120'}, 'slow');
+		}else{
+			$('#header-inner').animate({'height': '60'}, 'slow');
+		}
+		});
+		
+		
+	});
+</script>
 
 </body>
 </html>

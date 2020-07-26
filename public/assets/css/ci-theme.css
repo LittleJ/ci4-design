@@ -156,7 +156,7 @@
 
 .warning{
 	background-color:var(--primary-color);
-	width:90%;
+	width:100%;
 	height:100%;
 	padding:10px;
 	box-sizing:border-box;
@@ -216,7 +216,7 @@ a.link-reverse:link,a.link-reverse:visited{
 	}
 
 *:focus {
-	background-color: #F9F3F3;
+	.background-color: #F9F3F3;
 	outline: none;
 	}
 
@@ -240,17 +240,20 @@ a {
 /* HEADER =================================================================== */
 
 header {
+	float:left;
+	width:100%;
 	border-bottom: 1px solid var(--section-border);
 	background-color: var(--soft-white);
 	padding: 0;
 	margin:0;
-	height:60px;
+	height:100%;
 	}
 
 #header-inner{
 	width:60%;
 	height:60px;
 	margin:0 auto;
+	overflow:hidden;
 	}
 
 #logo{
@@ -258,6 +261,9 @@ header {
 	margin-top:7.5px;
 	}
 
+#mobile-search{
+	display:none;
+}
 /* Menu --------------------------------------------------------------------- */
 
 #menu-toggle {
@@ -344,6 +350,30 @@ a.top-menu-item-download:hover {
 	border-bottom:0px solid var(--primary-color);
 	}
 
+#search-bar{
+	float:right;
+	width:210px;
+	height:30px;
+	margin: 10px 2px 0 45px;
+	padding:4px 10px 10px 10px;
+	box-sizing:border-box;
+
+}
+
+#search-bar-input{
+	float:right;
+	width:190px;
+	padding:10px 5px;
+	margin: 0 -10px 0 0;
+	background:#fff;
+	color:var(--primary-color);
+	border:1px solid #f7f7f7;
+	/*border-bottom:1px solid var(--primary-color);*/
+}
+
+#search-bar-input:focus{
+	border:1px solid #f3f3f3;
+}
 /* The spotlight stands for slider which we do not have */
 section#spotlight-outer{
 	float:left;
@@ -377,7 +407,7 @@ section#spotlight-outer{
 	width: 50px;
 	height: 50px;
 	position: absolute;
-	top: 10px;
+	top: 20px;
 	right: 0;
 	font-size: 2rem;
 	color: var(--primary-color);
@@ -602,9 +632,9 @@ section#content-outer{
 .recent-news-and-forum-posts {
 	float: none;
 	display: inline-block;
-	width: 49%;
+	width: 45%;
 	height: 100%;
-	margin: 38px auto 3rem auto;
+	margin: 38px 27px;
 	}
 
 /* rnafp is the abbr. of Recent News And Forum Posts, initials */
@@ -849,10 +879,10 @@ a.footer-menu-item:hover {
 	}
 
 .inner-page-text-box{
-	width:90%;
+	width:100%;
 	height:100%;
 	background:#f7f7f7;
-	margin:30px auto;
+	margin:15px auto;
 	padding:10px;
 	box-sizing:border-box;
 	border:1px solid var(--section-border);
@@ -866,10 +896,9 @@ a.footer-menu-item:hover {
 }
 
 #inner-page-opening-text{
-	width: 90%;
+	width: 100%;
 	margin: 10px auto;
 	text-align: justify;
-	border: 1px solid #eee;
 	padding: 20px;
 	border-radius: 3px;
 	box-sizing: border-box;
@@ -894,12 +923,98 @@ a.footer-menu-item:hover {
 	font-weight:600;
 }
 
-.inner-page-text-sub-box p{
+/* NEWS Page ------------------------------------------------------------------ */
+
+section#content-outer-discover{
+	float:left;
 	width:100%;
-	margin:0 auto;
-	line-height:24px;
+	height:100%;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	background: #fafafa;
+
+	}
+
+#content-inner-news{
+	width:80%;
+	height:100%;
+	margin:10px auto;
+	background:#fff;
+	border:0px solid var(--section-border);
 }
 
+#news-left-column{
+	float:left;
+	width:15%;
+	height:100%;
+	padding:15px;
+	padding-bottom:30px;
+	box-sizing:border-box;
+	border-right:1px solid var(--section-border);
+}
+
+a.news-left-years:link,a.news-left-years:visited{
+	text-decoration:none;
+	float:left;
+	width:80%;
+	height:20px;
+	padding:10px 0;
+	color:var(--secondary-color);
+	border-bottom:1px dotted var(--secondary-color);
+	transition:all 0.3s;
+}
+a.news-left-years:hover{
+	color:var(--primary-color);
+	border-bottom:1px dotted var(--primary-color);
+	margin-left:2px;
+}
+a.news-left-years-active:link,a.news-left-years-active:visited{
+	text-decoration:none;
+	float:left;
+	width:80%;
+	height:20px;
+	padding:10px 0;
+	border-bottom:1px dotted var(--primary-color);
+	color:var(--primary-color);
+	font-weight:600;
+}
+
+#news-column{
+	float:left;
+	width:80%;
+	height:100%;
+	padding:15px;
+	box-sizing:border-box;
+}
+.news-box{
+	float:left;
+	width:90%;
+	height:100%;
+	margin:15px;
+	padding:15px;
+	padding-bottom:30px;
+	box-sizing:border-box;
+	border:1px dashed #fff;
+	border-bottom:1px dashed var(--primary-color);
+	transition:all 0.5s;
+}
+/*
+.news-box:hover{
+	border:1px dashed var(--primary-color);
+}
+*/
+.news-box-title{
+	float:left;
+	font-size:24px;
+	color:var(--primary-color);
+}
+.news-date{
+	float:left;
+	margin:10px;
+	font-size:14px;
+	color:#aaa;
+}
 /* DISCOVER Page -------------------------------------------------------------- */
 
 section#content-outer-discover{
@@ -1102,10 +1217,12 @@ section#content-outer-discover{
 
 /* DOWNLOAD PAGE ------------------------------------------------------------ */
 
+
 .ci-version-boxes{
+
 	float:left;
 	width:31%;
-	min-height:700px; /*100%*/
+	min-height:700px; /*240px*/
 	margin-top:30px;
 	margin-bottom:45px;
 	margin-right:2%;
@@ -1113,18 +1230,25 @@ section#content-outer-discover{
 	border:1px solid var(--section-border);
 	border-radius:5px;
 	box-sizing:border-box;
-	display:block;
+	/*display:block;*/
+	 display: table-cell;
 	overflow:auto;
 	position:relative;
 	transition: all 1s ease;
 }
-
+/*.ci-version-boxes:nth-of-type(1){
+	.width:34%;
+	box-shadow: 5px 10px 10px #eee;
+	border:1px solid var(--primary-color);
+}*/
 
 .ci-version-boxes:hover{
 	.background:var(--soft-white);
 	box-shadow: 5px 10px 10px #eee;
 	border:1px solid var(--primary-color);
 }
+
+
 .cv-boxes-version{
 		.float:left;
 		width:180px;
@@ -1160,10 +1284,21 @@ span.version-no{
 		margin:45px auto;
 		padding-bottom:15px;
 		text-align:justify;
+	}
+
+.cv-boxes-buttons-area	{
+	float:left;
+	width:80%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:10%;
 }
-
 /* CONTRIBUTE ----------------------------------------------------------*/
-
+	/*
+a.download-buttons:nth-of-type(1){
+	margin-left:0;
+}*/
 
 #contribute-heart-holder{
 	width:100%;
@@ -1203,7 +1338,7 @@ a.contributors-profile-link{
 	margin:2px auto;
 	background:#eee;
 	border:1px solid #eee;
-	border-radius:3px;
+	border-radius:180px;
 }
 
 .contributors-stars{
