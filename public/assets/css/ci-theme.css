@@ -248,7 +248,7 @@ header {
 	}
 
 #header-inner{
-	width:80%;
+	width:60%;
 	height:60px;
 	margin:0 auto;
 	}
@@ -719,7 +719,7 @@ footer#footer-outer {
 	}
 
 #footer-inner {
-	width:80%;
+	width:60%;
 	margin:0 auto;
 	height: 60px;
 	margin-top:0;
