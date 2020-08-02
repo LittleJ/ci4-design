@@ -343,9 +343,38 @@ header {
 #mobile-search{
 	display:block;
 	float:left;
-	margin:15px;
+	width:270px;
+	height:30px;
+	margin: 10px 2px 0 0px;
+	padding:4px 10px 10px 10px;
+	box-sizing:border-box;
 }
 
+
+#search-bar-input{
+	float:left;
+	width:270px;
+	padding:10px 5px;
+	margin: 0 -12px 0 0;
+	background:#fff;
+	color:var(--primary-dark);
+	border:1px solid var(--primary-color);
+	/*border-bottom:1px solid var(--primary-color);*/
+}
+
+#search-bar-input:focus{
+	border:1px solid var(--primary-dark)/*#f3f3f3*/;
+}
+
+#mobile-search button {
+  float: right;
+  height:36px;
+  margin-top: -37px;
+  margin-right: -31px;
+  background: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
 #menu-toggle {
 	display: block;
 	margin-top:5px;
@@ -860,6 +889,84 @@ a.footer-menu-item-active:link,a.footer-menu-item-active:visited{
 			
 }
 
+/* MEDIA 590 - 670 ========================== */
+
+@media(min-width:590px) and (max-width:670px){
+	#mobile-search{
+	display:block;
+	float:left;
+	width:210px;
+	height:30px;
+	margin: 10px 0px 0 0px;
+	padding:4px 10px 10px 10px;
+	box-sizing:border-box;
+}
+
+
+#search-bar-input{
+	float:left;
+	width:210px;
+	padding:10px 5px;
+	margin: 0 -12px 0 0;
+	background:#fff;
+	color:var(--primary-dark);
+	border:1px solid var(--primary-color);
+	/*border-bottom:1px solid var(--primary-color);*/
+}
+
+#search-bar-input:focus{
+	border:1px solid var(--primary-dark)/*#f3f3f3*/;
+}
+
+#mobile-search button {
+  float: right;
+  height:36px;
+  margin-top: -37px;
+  margin-right: -31px;
+  background: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+}
+/* MEDIA 590 ========================== */
+
+@media(min-width:589px) and (max-width:590px){
+	#mobile-search{
+	display:block;
+	float:left;
+	width:180px;
+	height:30px;
+	margin: 10px 0px 0 0px;
+	padding:4px 10px 10px 10px;
+	box-sizing:border-box;
+}
+
+
+#search-bar-input{
+	float:left;
+	width:180px;
+	padding:10px 5px;
+	margin: 0 -12px 0 0;
+	background:#fff;
+	color:var(--primary-dark);
+	border:1px solid var(--primary-color);
+	/*border-bottom:1px solid var(--primary-color);*/
+}
+
+#search-bar-input:focus{
+	border:1px solid var(--primary-dark)/*#f3f3f3*/;
+}
+
+#mobile-search button {
+  float: right;
+  height:36px;
+  margin-top: -37px;
+  margin-right: -31px;
+  background: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+}
 /* MEDIA 400px ============================== */
 
 @media(max-width:400px){
