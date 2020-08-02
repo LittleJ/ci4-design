@@ -7,9 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="public/favicon.ico"/>
 
-  <link rel="stylesheet" href="public/assets/css/ci-theme.css?ver=1.0">
+  <link rel="stylesheet" href="public/assets/css/ci-theme.css">
   <link rel="stylesheet" href="public/assets/css/ci-responsive.css?ver=1.0">
   <link rel="stylesheet" href="public/assets/css/animate.css">
+  
+      <!-- Social: Twitter -->  
+    <meta name="twitter:card" content="summary_large_image">  
+    <meta name="twitter:site" content="@info">  
+    <meta name="twitter:creator" content="info">  
+    <meta name="twitter:title" content="Title">  
+    <meta name="twitter:description" content="Description">  
+    <meta name="twitter:image:src" content="image-url-here">  
+	
+	    <!-- Social: Facebook / Open Graph -->  
+    <meta property="fb:admins" content="Yorum Yönetici Profil IDleri">  
+    <meta property="fb:app_id" content="Facebook Uygulama IDsi">  
+    <meta property="og:url" content="http://siteadresi.com/sayfa-adresi.html">  
+    <meta property="og:type" content="article">  
+    <meta property="og:title" content="Title">  
+    <meta property="og:image" content="image-url-here"/>  
+    <meta property="og:description" content="page description here">  
+    <meta property="og:site_name" content="page name here">  
+    <meta property="article:author" content="https://www.facebook.com/YourProfile">  
+    <meta property="article:publisher" content="https://www.facebook.com/YourProfile">  
 </head>
 <body>
 
@@ -28,18 +48,15 @@
 			  </svg>
 			</a>
 		</div>
-		
 		<div id="mobile-search">
-			<input type="text" placeholder="Search.." id="search-bar-input" name="search" />
-			<button type="submit"><img src="public/assets/icons/search-icon.png" alt="search button"></button>
+			<input type="text" placeholder="Type here + Enter" id="search-bar-input" name="search" />
 		</div><!--mobile-search ends-->
-		
 			<div id="menu-toggle">
 				<button onclick="toggleMenu();">&#9776;</button>
 			</div>
 		<div id="top-menu">
 					<!--<a href="discover.html" class="top-menu-item hidden" title="CodeIgniter.com">Discover</a>-->
-					<a href="news.html" class="top-menu-item">News</a>
+					<a href="news.html" class="top-menu-item-active">News</a>
 					<a href="discuss.html" class="top-menu-item">Discuss</a>
 					<a href="contribute.html" class="top-menu-item">Contribute</a>
 					<a href="javascript:void(0)" id="search" class="top-menu-item">Search</a>
@@ -57,75 +74,52 @@
 <div class="clr"></div>
 
 	<div id="breadcrumb-outer">
-		<div id="breadcrumb-inner"><span class="boldy600">DOWNLOAD </span>| THE TREASURE CHEST</div>
+		<div id="breadcrumb-inner"><span class="boldy600">BLOG </span>| DETAILS</div>
 	</div>
 
 <!-- CONTENT -->
 <div class="clr"></div>
-<section id="content-outer">
-	<div id="content-inner">
-			<div class="ci-version-boxes">
-				<div class="cv-boxes-version">
-					<div class="version-name">CODEIGNITER <br />
-						<span class="version-no">4</span>
-					</div>
-				</div><!--cv-boxes-version ende-->
-				<div class="cv-boxes-content">
-					<p>CodeIgniter 4 is the latest version of the framework, intended for use with PHP 7.2.</p> 
-					<p>Development was released on 24th of February, 2020. The current version is v4.0.2. </p>
-					<p>You *could* download the V4 framework using the button below, but we encourage you to <a href="https://codeigniter4.github.io/userguide/installation/index.html" class="link-primary">check</a> the Installation section of the User Guide, 
-	to choose from several different ways you can install the framework :) </p>
-						<div class="clr"></div>
-					<div class="cv-boxes-buttons-area">
-						<a href="#" class="buttons-reverse download-buttons">Download</a>
-						<a href="#" class="buttons-reverse download-buttons">Discuss</a>
-						<a href="#" class="buttons-reverse download-buttons">Sources</a>
-						<a href="#" class="buttons-reverse download-buttons">Translations</a>
-					</div><!--cv-boxes-buttons-area ends here-->	
-				</div><!--cv-boxes-content ends here-->
-			</div><!--ci-version-boxes ende-->
+<section id="content-outer-news">
+	<div id="content-inner-news">
+		<div id="news-left-column">
+			<a href="#" class="news-left-years-active">2020</a>
+			<a href="#" class="news-left-years">2019</a>
+			<a href="#" class="news-left-years">2018</a>
+		</div>
+	
+		<div id="news-column">
 		
-			
-			<div class="ci-version-boxes">
-				<div class="cv-boxes-version">
-					<div class="version-name">CODEIGNITER <br />
-						<span class="version-no">3</span>
-					</div>
-				</div><!--cv-boxes-version ende-->
-				<div class="cv-boxes-content">
-					<p>CodeIgniter 3.1.11 is the current version of the framework, intended for use with PHP 5.6+</p> 
-					<p>There have been a number of refinements since version 2, notably with the database, session handling and encryption. 
-					Development of this version is ongoing. </p>
-					
-						<div class="clr"></div>
-					<div class="cv-boxes-buttons-area">	
-						<a href="#" class="buttons-reverse download-buttons">Download</a>
-						<a href="#" class="buttons-reverse download-buttons">Sources</a>
-						<a href="#" class="buttons-reverse download-buttons">Translations</a>
-					</div><!--cv-boxes-buttons-area ends-->
-				</div><!--cv-boxes-content ends here-->
-			</div><!--ci-version-boxes ende-->
+			<div class="news-box">
+				<div class="news-box-title">CodeIgniter 4 Has Been Released</div> <div class="news-date">28.07.2020</div>
+					<div class="clr"></div>
+				<p>
+				<img src="public/assets/images/CI-4-Launched-2.jpg">
+				</p>
+				<p>
+				There are a quite a number of bug-fixes as people use the framework more. 
+				Along with that there's a pretty long list of enhancements (see changelog).
+				</p>
+
+				<p>
+				Ut interdum leo in venenatis interdum. Nulla enim odio, sodales eu nisi ut, gravida varius nulla. 
+				Suspendisse quis vulputate turpis. Nunc condimentum et eros vitae dictum. 
+				Aliquam molestie dignissim arcu, eu interdum quam varius et. 
+				Vivamus ac tellus ac metus dignissim mollis quis sed tortor. Nunc a sem vitae dolor dapibus varius. 
+				Vestibulum ullamcorper odio augue, eu facilisis erat egestas id. 
+				</p>
 				
-			
-			<div class="ci-version-boxes">
-				<div class="cv-boxes-version">
-					<div class="version-name">CODEIGNITER <br />
-						<span class="version-no">2</span>
-					</div>
-				</div><!--cv-boxes-version ende-->
-				<div class="cv-boxes-content">
-					<p>CodeIgniter 2.2.6 is the legacy version of the framework.</p> 
-					<p>The 2.x branch was originally released January 2011, and the last version (2.2.6) came out in October, 2015. </p>
-					<p>CodeIgniter 2 has reached its end-of-life for support and updates, as of October 31, 2015. No further updates are planned.</p>
-					
-						<div class="clr"></div>
-					<div class="cv-boxes-buttons-area">
-						<a href="#" class="buttons-reverse download-buttons">Download</a>
-					</div><!--cv-boxes-buttons-area ends-->
-				</div><!--cv-boxes-content ends here-->
-			</div><!--ci-version-boxes ende-->		
-	</div><!--content-inner ends here-->
-</div><!--section ende-->
+				<img src="public/assets/icons/twitter.png" alt="search button">
+				<img src="public/assets/icons/facebook.png" alt="search button">
+				
+			</div><!--news-box ends here-->
+
+
+		</div><!--news-column ends-->
+<div class="clr"></div>
+		
+
+	</div><!--content inner ends-->
+</section><!--section ende-->
 
 
 <div class="clr"></div>
@@ -136,10 +130,10 @@
     <div id="footer-inner-left">
           <a href="policies.html" class="footer-menu-item" >Policies</a>
           <a href="the-fine-print.html" class="footer-menu-item" >The Fine Print</a>
-          <a href="news.html" class="footer-menu-item">News</a>
+          <a href="news.html" class="footer-menu-item-active">News</a>
           <a href="discuss.html" class="footer-menu-item" >Discuss</a>
           <a href="contribute.html" class="footer-menu-item" >Contribute</a>
-          <a href="download.html" class="footer-menu-item-active" >Download</a>
+          <a href="download.html" class="footer-menu-item" >Download</a>
     </div><!--footer-inner-left ends here-->
 
     <div id="footer-inner-right">
@@ -211,6 +205,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+
 <script type="text/javascript">
 	$(document).ready(function(){
 	  $('#menu-toggle button').click(function(){
@@ -241,6 +236,5 @@
 		
 	});
 </script>
-
 </body>
 </html>

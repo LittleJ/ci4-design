@@ -29,7 +29,8 @@
 			</a>
 		</div>
 		<div id="mobile-search">
-			<input type="text" placeholder="Type here + Enter" id="search-bar-input" name="search" />
+			<input type="text" placeholder="Search.." id="search-bar-input" name="search" />
+			<button type="submit"><img src="public/assets/icons/search-icon.png" alt="search button"></button>
 		</div><!--mobile-search ends-->
 			<div id="menu-toggle">
 				<button onclick="toggleMenu();">&#9776;</button>
@@ -44,7 +45,8 @@
 		</div><!--top-menu ende-->
 		<div class="clr"></div>
 		<div id="search-bar">
-			<input type="text" placeholder="Type here + Enter" id="search-bar-input" name="search" />
+			<input type="text" placeholder="Search.." id="search-bar-input" name="search" />
+			<button type="submit"><img src="public/assets/icons/search-icon.png" alt="search button"></button>
 		</div><!--search-bar ends here-->
 	</div><!--header inner ende-->
 		<!--<a href="#" class="download-button" class="top-menu-item hidden" title="Github">Download</a>-->
@@ -67,6 +69,39 @@
 		</div>
 	
 		<div id="news-column">
+		
+			<div class="news-box">
+				<div class="news-box-title">Services in CodeIgniter 4</div> <div class="news-date">28.07.2020</div>
+					<div class="clr"></div>
+				<div class="video-container">
+				<object data='https://www.youtube.com/embed/iqQufhllUCo' width='98%' height='98%'></object>
+				</div>
+				<p>
+				There are a quite a number of bug-fixes as people use the framework more. 
+				Along with that there's a pretty long list of enhancements (see changelog).
+				</p>
+
+				<a href="news-detail.html" class="buttons-reverse">Read More</a>
+			</div><!--news-box ends here-->
+
+<div class="clr"></div>
+			
+			<div class="news-box">
+				<div class="news-box-title">CodeIgniter 4 Has Been Released</div> <div class="news-date">28.07.2020</div>
+					<div class="clr"></div>
+				<p>
+				<img src="public/assets/images/CI-4-Launched-2.jpg">
+				</p>
+				<p>
+				There are a quite a number of bug-fixes as people use the framework more. 
+				Along with that there's a pretty long list of enhancements (see changelog).
+				</p>
+
+				<a href="news-detail.html" class="buttons-reverse">Read More</a>
+			</div><!--news-box ends here-->
+
+<div class="clr"></div>
+
 			<div class="news-box">
 				<div class="news-box-title">CodeIgniter v4.0.4 released</div> <div class="news-date">10.07.2020</div>
 					<div class="clr"></div>
@@ -83,7 +118,7 @@
 				Also a number of things streamlined within Feature testing. Thanks to MGatner for those updates.
 				</p>
 
-				<a href="#" class="buttons-reverse">Read More</a>
+				<a href="news-detail.html" class="buttons-reverse">Read More</a>
 			</div><!--news-box ends here-->
 
 <div class="clr"></div>
@@ -104,7 +139,7 @@
 				Also a number of things streamlined within Feature testing. Thanks to MGatner for those updates.
 				</p>
 
-				<a href="#" class="buttons-reverse">Read More</a>
+				<a href="news-detail.html" class="buttons-reverse">Read More</a>
 			</div><!--news-box ends here-->
 		</div><!--news-column ends-->
 <div class="clr"></div>
@@ -219,9 +254,9 @@
 		$('#search').click(function(){
 			$maxHeight = 120;
 			if($('#header-inner').height() < $maxHeight){
-			$('#header-inner').animate({'height': '120'}, 'slow');
+			$('#header-inner').animate({'height': '120'}, 400);
 		}else{
-			$('#header-inner').animate({'height': '60'}, 'slow');
+			$('#header-inner').animate({'height': '60'}, 400);
 		}
 		});
 		

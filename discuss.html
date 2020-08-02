@@ -30,7 +30,8 @@
 		</div>
 		
 		<div id="mobile-search">
-			<input type="text" placeholder="Type here + Enter" id="search-bar-input" name="search" />
+			<input type="text" placeholder="Search.." id="search-bar-input" name="search" />
+			<button type="submit"><img src="public/assets/icons/search-icon.png" alt="search button"></button>
 		</div><!--mobile-search ends-->
 		
 			<div id="menu-toggle">
@@ -46,7 +47,8 @@
 		</div><!--top-menu ende-->
 		<div class="clr"></div>
 		<div id="search-bar">
-			<input type="text" placeholder="Type here + Enter" id="search-bar-input" name="search" />
+			<input type="text" placeholder="Search.." id="search-bar-input" name="search" />
+			<button type="submit"><img src="public/assets/icons/search-icon.png" alt="search button"></button>
 		</div><!--search-bar ends here-->
 	</div><!--header inner ende-->
 </header>
@@ -258,9 +260,9 @@
 		$('#search').click(function(){
 			$maxHeight = 120;
 			if($('#header-inner').height() < $maxHeight){
-			$('#header-inner').animate({'height': '120'}, 'slow');
+			$('#header-inner').animate({'height': '120'}, 400);
 		}else{
-			$('#header-inner').animate({'height': '60'}, 'slow');
+			$('#header-inner').animate({'height': '60'}, 400);
 		}
 		});
 		
