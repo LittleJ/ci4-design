@@ -592,12 +592,12 @@ section#content-outer{
 
 .ci-features-box {
 	float: left;
-	width: 45%;
+	width: 42%;
 	height: 150px;
 	padding: 10px;
 	box-sizing: border-box;
 	border: 1px solid var(--white);
-	margin: 18px 10px 0 10px;
+	margin: 18px 4%;
 	transition: box-shadow 0.5s;
 	transition: margin-top 0.5s;
 	}
@@ -644,14 +644,55 @@ section#content-outer{
 	box-sizing: border-box;
 	}
 
+/* Big icons links ---------------------------------------------------------- */
+
+section#important-links-outer{
+	background-color: var(--soft-white);
+	float:left;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:32px 0;
+	}
+
+#important-links-inner {
+	width:60%;
+	height:100%;
+	margin:0 auto;
+	}
+
+.important-link-boxes {
+	float: left;
+	text-align: center;
+	width: 23%; /*250px*/
+	height: 150px;
+	margin: 0 1%;
+	padding: 10px;
+	box-sizing: border-box;
+	background: var(--white);
+	border: 1px solid #f1f1f1;
+	border-radius: 3px;
+	transition: all 0.5s;
+	}
+
+.important-link-boxes a:link, .important-link-boxes a:visited {
+	text-decoration: none;
+	}
+
+.important-link-boxes:hover {
+	box-shadow: 0 10px 10px #dbdbdb;
+	border: 1px solid #DFDFDF;
+	}
+	
+	
 /* Forum posts -------------------------------------------------------------- */
 
 .recent-news-and-forum-posts {
 	float: none;
 	display: inline-block;
-	width: 45%;
+	width: 41%;
 	height: 100%;
-	margin: 38px 15px;
+	margin: 38px 4%;
 	}
 
 /* rnafp is the abbr. of Recent News And Forum Posts, initials */
@@ -698,7 +739,7 @@ section#content-outer{
 	float: left;
 	width: 82%;
 	height: 100%;
-	padding: 10px;
+	padding: 10px 0 0 20px;
 	box-sizing: border-box;
 	color: var(--secondary-color);
 	}
@@ -706,47 +747,6 @@ section#content-outer{
 a.rnapf-title-link:link, a.rnapf-title-link:visited {
 	text-decoration: none;
 	}
-
-/* Big icons links ---------------------------------------------------------- */
-
-section#important-links-outer{
-	background-color: var(--soft-white);
-	float:left;
-	width:100%;
-	height:100%;
-	margin:0;
-	padding:1.5rem 0;
-	}
-
-#important-links-inner {
-	width:60%;
-	height:100%;
-	margin:10px auto;
-	}
-
-.important-link-boxes {
-	float: left;
-	text-align: center;
-	width: 23%; /*250px*/
-	height: 150px;
-	margin: 10px 5px;
-	padding: 10px;
-	box-sizing: border-box;
-	background: var(--white);
-	border: 1px solid #f1f1f1;
-	border-radius: 3px;
-	transition: all 0.5s;
-	}
-
-.important-link-boxes a:link, .important-link-boxes a:visited {
-	text-decoration: none;
-	}
-
-.important-link-boxes:hover {
-	box-shadow: 0 10px 10px #dbdbdb;
-	border: 1px solid #DFDFDF;
-	}
-
 
 /* FOOTER =================================================================== */
 
