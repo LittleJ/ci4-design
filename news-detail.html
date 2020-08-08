@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodeIgniter Blog Detail</title>
+  <title>CodeIgniter | Blog Detail</title>
   <meta name="description" content="The small framework with powerful features">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="public/favicon.ico"/>
@@ -29,7 +29,12 @@
     <meta property="og:description" content="page description here">  
     <meta property="og:site_name" content="page name here">  
     <meta property="article:author" content="https://www.facebook.com/YourProfile">  
-    <meta property="article:publisher" content="https://www.facebook.com/YourProfile">    
+    <meta property="article:publisher" content="https://www.facebook.com/YourProfile">  
+	
+	<link rel="stylesheet" href="public/assets/js/highlight/styles/agate.css"><!--default-->
+	<script src="public/assets/js/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	
 </head>
 <body>
 
@@ -99,8 +104,19 @@
 				There are a quite a number of bug-fixes as people use the framework more. 
 				Along with that there's a pretty long list of enhancements (see changelog).
 				</p>
-
+				<div class="coding">
+					<pre>
+					<code class="php">
+						 
+if($student->school_no !=''){
+ echo 'Your School No is : '. $student->school_no;
+}
+						
+					</code>
+					</pre>
+				</div>
 				<p>
+				
 				Ut interdum leo in venenatis interdum. Nulla enim odio, sodales eu nisi ut, gravida varius nulla. 
 				Suspendisse quis vulputate turpis. Nunc condimentum et eros vitae dictum. 
 				Aliquam molestie dignissim arcu, eu interdum quam varius et. 
